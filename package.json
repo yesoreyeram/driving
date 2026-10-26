@@ -7,7 +7,7 @@
   "scripts": {
     "build": "npm run check && node scripts/build.mjs",
     "test": "node --test tests/*.test.mjs",
-    "check": "node --check src/app.js && node --check src/map.mjs && node --check src/domain.mjs && node --check src/registry.mjs && node --check src/journey.mjs && node --check src/scenarios.mjs && node --check scripts/serve.mjs && node --test tests/*.test.mjs",
+    "check": "node --check src/app.js && node --check src/map.mjs && node --check src/domain.mjs && node --check src/registry.mjs && node --check src/journey.mjs && node --check src/scenarios.mjs && node --check src/skills.mjs && node --check scripts/serve.mjs && node --test tests/*.test.mjs",
     "dev": "node scripts/serve.mjs",
     "preview": "node scripts/serve.mjs --built"
   },
