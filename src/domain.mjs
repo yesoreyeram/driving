@@ -1,5 +1,6 @@
+import {validateScenarioPractice,reviewedScenarios} from './scenarios.mjs';
 export const STORAGE_KEY = 'routewise:v1';
-export const emptyProgress = () => ({version:1, bookmarks:[], sessions:[], scenarioChecks:[], plans:[], navigation:{}, routeNotes:{}});
+export const emptyProgress = () => ({version:1, bookmarks:[], sessions:[], scenarioChecks:[], plans:[], navigation:{}, routeNotes:{}, scenarioPractice:{}});
 export function validateProgress(value, routeIds) {
   if (!value || value.version !== 1 || !Array.isArray(value.bookmarks) || !Array.isArray(value.sessions) || !Array.isArray(value.scenarioChecks)) throw new Error('Unsupported practice file.');
   if (value.sessions.length > 10000 || value.bookmarks.some(id=>!routeIds.includes(id)) || value.scenarioChecks.some(id=>typeof id !== 'string' || id.length>80)) throw new Error('Invalid practice data.');
@@ -13,8 +14,9 @@ export function validateProgress(value, routeIds) {
   for(const p of plans){if(!p||typeof p.id!=='string'||!routeIds.includes(p.routeId)||typeof p.focus!=='string'||p.focus.length>500||!/^\d{4}-\d{2}-\d{2}$/.test(p.date)||!Number.isFinite(Date.parse(p.date))||new Date(p.date).toISOString().slice(0,10)!==p.date)throw new Error('Invalid practice plan.');}
   if(!navigation||typeof navigation!=='object'||Array.isArray(navigation)||Object.entries(navigation).some(([id,leg])=>!routeIds.includes(id)||!Number.isInteger(leg)||leg<0||leg>1000))throw new Error('Invalid navigation progress.');
   if(!routeNotes||typeof routeNotes!=='object'||Array.isArray(routeNotes)||Object.entries(routeNotes).some(([id,n])=>!routeIds.includes(id)||!n||typeof n.notes!=='string'||n.notes.length>2000||!/^\d{4}-\d{2}-\d{2}$/.test(n.date)||!Number.isFinite(Date.parse(n.date))||new Date(n.date).toISOString().slice(0,10)!==n.date))throw new Error('Invalid route testing notes.');
+  const scenarioPractice=validateScenarioPractice(value.scenarioPractice);
   // Whitelist fields rather than retaining arbitrary imported properties.
-  return {version:1,routeNotes:Object.fromEntries(Object.entries(routeNotes).map(([id,{date,notes}])=>[id,{date,notes}])),plans:plans.map(({id,routeId,date,focus})=>({id,routeId,date,focus})),navigation:{...navigation},bookmarks:[...new Set(value.bookmarks)],scenarioChecks:[...new Set(value.scenarioChecks)],sessions:value.sessions.map(({id,routeId,date,minutes,confidence,notes})=>({id,routeId,date,minutes,confidence,notes}))};
+  return {version:1,scenarioPractice,routeNotes:Object.fromEntries(Object.entries(routeNotes).map(([id,{date,notes}])=>[id,{date,notes}])),plans:plans.map(({id,routeId,date,focus})=>({id,routeId,date,focus})),navigation:{...navigation},bookmarks:[...new Set(value.bookmarks)],scenarioChecks:reviewedScenarios(value.scenarioChecks,scenarioPractice),sessions:value.sessions.map(({id,routeId,date,minutes,confidence,notes})=>({id,routeId,date,minutes,confidence,notes}))};
 }
 export function filterRoutes(routes, {query='',skill='',savedOnly=false,bookmarks=[],centreId=''}={}) {
   const q=query.trim().toLowerCase();
