@@ -15,7 +15,7 @@ An open-source driving practice companion. Start with Maidstone, learn the local
 
 ## Run locally
 
-No dependencies or build step are required. Serve `dist` over HTTP; ES modules and JSON loading do not work by double-clicking `index.html`.
+No package dependencies are required. `npm run build` validates the project and prepares `_site/` for publication. Serve `dist` over HTTP; ES modules and JSON loading do not work by double-clicking `index.html`.
 
 ```sh
 git clone https://github.com/yesoreyeram/driving.git
@@ -27,6 +27,7 @@ Open `http://localhost:8080`. Node 22+ is needed only for checks:
 
 ```sh
 npm run check
+npm run build
 ```
 
 ## Navigate a practice route
@@ -47,6 +48,10 @@ Initial factual road references and map-input waypoints come from [Maidstone Tes
 All seeds are **source-linked, not independently road-verified**. They are practice ideas, not official DVSA routes or a guarantee about a test. Suggested skill tags are editorial learning prompts, not verified attributes of the roads. No exact geometry, distance, duration, speed limit or lane-specific instruction is invented.
 
 Use before and after a drive while safely parked. Learn with a qualified instructor or eligible supervising driver, with the required licence, insurance and plates. Follow current signs and restrictions. Use the current [GOV.UK learning-to-drive guidance](https://www.gov.uk/driving-lessons-learning-to-drive) and [Highway Code](https://www.gov.uk/guidance/the-highway-code). This app is not instructor assessment or proof of test readiness.
+
+## GitHub Pages deployment
+
+The Pages workflow builds pull requests and automatically publishes successful builds after merges to `main`. Set **Settings → Pages → Source → GitHub Actions** once before the first deployment. See [deployment instructions](docs/deployment.md) for setup, manual redeployment and troubleshooting.
 
 ## Open-source contributions
 
