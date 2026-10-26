@@ -1,3 +1,4 @@
+import {skills} from './skills.mjs';
 export function routeAvailability(route) {
   if (!route.navigation) return 'Historical only';
   return route.navigation.kind === 'road-plan' ? 'Road-name navigation' : 'Waypoint navigation';
@@ -6,14 +7,17 @@ export function readView(href, routes, centres) {
   const params = new URL(href).searchParams;
   const route = routes.find(r => r.id === params.get('route'));
   const centre = route?.centreId || (centres.some(c => c.id === params.get('centre')) ? params.get('centre') : centres[0].id);
-  const tab = ['routes','scenarios','log','community'].includes(params.get('view')) ? params.get('view') : 'routes';
-  return {centreId:centre, selected:route?.id || routes.find(r=>r.centreId===centre)?.id, tab, detail:!!route && tab==='routes'};
+  const requested=params.get('view')==='scenarios'?'skills':params.get('view');
+  const skill=skills.find(s=>s.id===params.get('skill'));
+  const tab=skill?'skills':['routes','skills','log','community'].includes(requested)?requested:'routes';
+  return {centreId:centre, selected:route?.id || routes.find(r=>r.centreId===centre)?.id, tab, ...(tab==='skills'?{skillId:skill?.id||null}:{}), detail:!!route && tab==='routes'};
 }
-export function viewURL(href, {centreId,selected,tab,detail}) {
+export function viewURL(href, {centreId,selected,tab,detail,skillId}) {
   const url = new URL(href);
   url.searchParams.set('centre',centreId);
   if(tab==='routes')url.searchParams.delete('view');else url.searchParams.set('view',tab);
   if(detail && tab==='routes')url.searchParams.set('route',selected);else url.searchParams.delete('route');
+  if(tab==='skills'&&skills.some(s=>s.id===skillId))url.searchParams.set('skill',skillId);else url.searchParams.delete('skill');
   url.hash='';return url;
 }
 // Geographic projection for orientation only: sparse anchors are not road geometry.

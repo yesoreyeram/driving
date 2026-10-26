@@ -10,7 +10,7 @@ test('shared route survives reload under a Pages subdirectory and determines its
 });
 test('list and journal URLs remove stale route selection and support history restoration',()=>{
  const detail='https://example.org/driving/?centre=maidstone&route=maidstone-01';
- for(const tab of ['routes','log','scenarios']){const url=viewURL(detail,{centreId:'crawley',selected:'crawley-01',tab,detail:false});assert.equal(url.searchParams.has('route'),false);const v=readView(url,routes,centres);assert.equal(v.tab,tab);assert.equal(v.detail,false);assert.equal(v.centreId,'crawley');}
+ for(const tab of ['routes','log','skills']){const url=viewURL(detail,{centreId:'crawley',selected:'crawley-01',tab,detail:false});assert.equal(url.searchParams.has('route'),false);const v=readView(url,routes,centres);assert.equal(v.tab,tab);assert.equal(v.detail,false);assert.equal(v.centreId,'crawley');}
  assert.equal(readView(detail,routes,centres).detail,true);
 });
 test('invalid route, centre and view recover to the default list',()=>{
