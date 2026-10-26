@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#214c3e">
+  <meta name="description" content="Get familiar with Maidstone driving practice routes, prepare for road scenarios and keep a personal practice log. An open-source community project.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; frame-src https://www.google.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>Routewise — driving practice, with confidence</title>
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div id="app"><p class="loading">Finding your way…</p></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="practice-dialog" aria-labelledby="practice-title"></dialog>
+  <dialog id="scenario-dialog" aria-labelledby="scenario-title"></dialog>
+  <dialog id="navigation-dialog" aria-labelledby="navigation-title"></dialog>
+</body>
+</html>
