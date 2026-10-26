@@ -1,12 +1,12 @@
 # Routewise
 
-An open-source driving practice companion. Start with Maidstone, learn the local roads, practise transferable skills and share better route knowledge through review.
+An open-source driving practice companion covering Maidstone, Crawley and Chelmsford. Learn the local roads, practise transferable skills and share better route knowledge through review.
 
 ## What works today
 
-- Ten Maidstone route references, searchable by road and suggested skill focus.
+- A centre selector with ten Maidstone references, two Crawley road-name plans and two clearly labelled historical Chelmsford references. Search and skill filters stay within the selected centre; progress spans centres.
 - Original source route maps embedded directly, with a map-part selector for split routes.
-- **One complete GPX route plan per route**, stitching the source map parts into a single ordered route. Import into a GPX-capable navigation app such as OsmAnd, select the car profile and review the resulting road path.
+- **One complete GPX route plan per Maidstone route**, stitching the source map parts into a single ordered route. Import into a GPX-capable navigation app such as OsmAnd, select the car profile and review the resulting road path.
 - Google Maps universal links as a fallback: sequential legs with no more than three intermediate points each, suitable for the documented mobile browser limit. Boundary points overlap, so no source point is lost.
 - Six scenario preparation checklists, including the D junction and Running Horse roundabout.
 - Bookmarks, practice duration, self-reported confidence and private notes in browser storage. JSON backup export and validated, non-destructive merge import.
@@ -40,6 +40,20 @@ npm run build
 GPX uses **`rtept` route points**, not a fabricated `trkpt` track. The file retains all source map anchors in order, including intermediate unlabelled coordinates. Near-identical shared map boundaries (within roughly one metre) are merged. It does not assert the exact road path between sparse anchors. Navigation software can choose different roads from the source article's road table. Source centre coordinates are historical; check current centre access and avoid obstructing active tests.
 
 Google Maps can launch the installed mobile app or fall back to a browser. It cannot import this complete GPX route. Its shorter legs are an optional fallback, not a solution for uninterrupted full-route practice. Apple Maps and Waze full-route support is not claimed. No native app handoff has been tested on a physical phone yet.
+
+## Coverage and navigation availability
+
+| Centre | References | Navigation |
+| --- | --- | --- |
+| Maidstone | 10 source map plans | Full GPX route points and segmented Google Maps links |
+| Crawley | 2 historical road-name plans | Segmented Google Maps links using qualified street names; review geocoded positions; no GPX without coordinates |
+| Chelmsford | 2 historical references | Navigation withheld because the source starts at the former Hoffmanns Way site |
+
+The centre selector scopes routes, suggested skills, scenario prompts and overview counts. Shared practice records and backups retain all centres. A `?centre=crawley` or `?centre=chelmsford` URL restores that selection after reload. Maidstone-only local scenarios are not shown for other centres.
+
+Crawley sources are [Learner Driver UK](https://www.learnerdriveruk.com/driving-test-centres/driving-test-routes/crawley/) with centre context from [PassMeFast](https://www.passmefast.co.uk/test-centres/practical/west-sussex/crawley). These street-name plans are not pinned coordinates or verified road paths.
+
+Chelmsford road highlights are from [Driving Test Centre](https://www.driving-test-centre.com/chelmsford-driving-test-routes.php), whose published starts use Hoffmanns Way. [DVSA announced relocation in 2018](https://content.govdelivery.com/accounts/UKDVSA/bulletins/2195408), and [its May 2025 disclosure log](https://www.gov.uk/csv-preview/6879043b0263c35f52e4dd9f/dvsa-foi-disclosure-log-may-2025.csv) records a later closure/relocation. This project does not assert today's meeting point; candidates should follow their booking instructions. No replacement starting point or connecting route has been guessed.
 
 ## Data provenance and safety
 

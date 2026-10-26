@@ -6,7 +6,32 @@
       "name": "Maidstone",
       "area": "Kent, South East England",
       "meetingArea": "Armstrong Road",
-      "source": "https://maidstonetestroutes.com/amp/"
+      "source": "https://maidstonetestroutes.com/amp/",
+      "county": "Kent"
+    },
+    {
+      "id": "crawley",
+      "name": "Crawley",
+      "county": "West Sussex",
+      "area": "West Sussex, South East England",
+      "meetingArea": "The Pavilions, Brighton Road, Pease Pottage",
+      "source": "https://www.passmefast.co.uk/test-centres/practical/west-sussex/crawley",
+      "notice": "Published road plans are historical and have not been checked on the road. Confirm the current centre location and access in your booking. Google Maps resolves road names; check each point before driving.",
+      "locationStatus": "source-listed-unverified"
+    },
+    {
+      "id": "chelmsford",
+      "name": "Chelmsford",
+      "county": "Essex",
+      "area": "Essex, East of England",
+      "meetingArea": "Check the current meeting point in your booking",
+      "source": "https://www.gov.uk/find-driving-test-centre",
+      "notice": "Historical road familiarisation only: these source routes start at the former Hoffmanns Way centre. DVSA announced a move to Hanbury Road in 2018, and its May 2025 disclosure log records a further closure/relocation. The current meeting point is not verified here. Navigation from the obsolete start is unavailable; check your booking.",
+      "locationStatus": "current-meeting-point-unconfirmed",
+      "locationSources": [
+        "https://content.govdelivery.com/accounts/UKDVSA/bulletins/2195408",
+        "https://www.gov.uk/csv-preview/6879043b0263c35f52e4dd9f/dvsa-foi-disclosure-log-may-2025.csv"
+      ]
     }
   ],
   "routes": [
@@ -1079,6 +1104,179 @@
         ],
         "roadPathVerified": false
       }
+    },
+    {
+      "id": "crawley-01",
+      "number": 1,
+      "centreId": "crawley",
+      "title": "Gossops Green & Southgate",
+      "summary": "A historical road plan through Gossops Green and Southgate.",
+      "roads": [
+        "Gossops Drive",
+        "Dower Walk",
+        "Buckswood Drive",
+        "Southgate Avenue"
+      ],
+      "skills": [
+        "Roundabouts",
+        "Meeting traffic"
+      ],
+      "source": {
+        "url": "https://www.learnerdriveruk.com/driving-test-centres/driving-test-routes/crawley/",
+        "publisher": "Learner Driver UK",
+        "accessedAt": "2026-10-26"
+      },
+      "status": "source-linked",
+      "lastVerifiedAt": null,
+      "geometry": null,
+      "skillsStatus": "suggested-practice-focus",
+      "navigation": {
+        "kind": "source-road-plan",
+        "locations": [
+          "Crawley Driving Test Centre, The Pavilions, Brighton Road, Pease Pottage, RH11 9BJ",
+          "Brighton Road, Crawley, West Sussex",
+          "Crawley Avenue, Crawley, West Sussex",
+          "Gossops Drive, Crawley, West Sussex",
+          "Dower Walk, Crawley, West Sussex",
+          "Oatlands, Crawley, West Sussex",
+          "Dower Walk, Crawley, West Sussex",
+          "Buckswood Drive, Crawley, West Sussex",
+          "Gossops Drive, Crawley, West Sussex",
+          "Rother Crescent, Crawley, West Sussex",
+          "Gossops Drive, Crawley, West Sussex",
+          "Crawley Avenue, Crawley, West Sussex",
+          "Horsham Road, Crawley, West Sussex",
+          "Downland Drive, Crawley, West Sussex",
+          "Clayton Hill, Crawley, West Sussex",
+          "Chanctonbury Way, Crawley, West Sussex",
+          "Brighton Road, Crawley, West Sussex",
+          "Southgate Road, Crawley, West Sussex",
+          "Malthouse Road, Crawley, West Sussex",
+          "Brewer Road, Crawley, West Sussex",
+          "Southgate Drive, Crawley, West Sussex",
+          "Southgate Avenue, Crawley, West Sussex",
+          "Brighton Road, Crawley, West Sussex",
+          "Crawley Driving Test Centre, The Pavilions, Brighton Road, Pease Pottage, RH11 9BJ"
+        ],
+        "sourceMaps": [],
+        "roadPathVerified": false
+      },
+      "startLocationStatus": "unverified-source-start"
+    },
+    {
+      "id": "crawley-02",
+      "number": 2,
+      "centreId": "crawley",
+      "title": "Tilgate & Furnace Green",
+      "summary": "Explore a published road sequence around Tilgate and Furnace Green.",
+      "roads": [
+        "Tilgate Way",
+        "Weald Drive",
+        "Furnace Drive",
+        "Hawth Avenue"
+      ],
+      "skills": [
+        "Junctions",
+        "Traffic lights"
+      ],
+      "source": {
+        "url": "https://www.learnerdriveruk.com/driving-test-centres/driving-test-routes/crawley/",
+        "publisher": "Learner Driver UK",
+        "accessedAt": "2026-10-26"
+      },
+      "status": "source-linked",
+      "lastVerifiedAt": null,
+      "geometry": null,
+      "skillsStatus": "suggested-practice-focus",
+      "navigation": {
+        "kind": "source-road-plan",
+        "locations": [
+          "Crawley Driving Test Centre, The Pavilions, Brighton Road, Pease Pottage, RH11 9BJ",
+          "Brighton Road, Crawley, West Sussex",
+          "Southgate Avenue, Crawley, West Sussex",
+          "Tilgate Way, Crawley, West Sussex",
+          "Ashdown Drive, Crawley, West Sussex",
+          "Weald Drive, Crawley, West Sussex",
+          "Loppets Road, Crawley, West Sussex",
+          "Shackleton Road, Crawley, West Sussex",
+          "Loppets Road, Crawley, West Sussex",
+          "Furnace Drive, Crawley, West Sussex",
+          "Sylvan Road, Crawley, West Sussex",
+          "Newmarket Road, Crawley, West Sussex",
+          "Furnace Drive, Crawley, West Sussex",
+          "The Glade, Crawley, West Sussex",
+          "Weald Drive, Crawley, West Sussex",
+          "Hawth Avenue, Crawley, West Sussex",
+          "Haslett Avenue East, Crawley, West Sussex",
+          "College Road, Crawley, West Sussex",
+          "Exchange Road, Crawley, West Sussex",
+          "Kilnmead, Crawley, West Sussex",
+          "High Street, Crawley, West Sussex",
+          "Ifield Avenue, Crawley, West Sussex",
+          "Crawley Avenue, Crawley, West Sussex",
+          "Brighton Road, Crawley, West Sussex",
+          "Crawley Driving Test Centre, The Pavilions, Brighton Road, Pease Pottage, RH11 9BJ"
+        ],
+        "sourceMaps": [],
+        "roadPathVerified": false
+      },
+      "startLocationStatus": "unverified-source-start"
+    },
+    {
+      "id": "chelmsford-03",
+      "number": 3,
+      "centreId": "chelmsford",
+      "title": "Springfield & Broomfield \u2014 historical",
+      "summary": "Road highlights from a published route starting at the former Hoffmanns Way site.",
+      "roads": [
+        "Springfield Road",
+        "Pump Lane",
+        "Essex Regiment Way",
+        "Broomfield Road"
+      ],
+      "skills": [
+        "Roundabouts",
+        "Observation"
+      ],
+      "source": {
+        "url": "https://www.driving-test-centre.com/chelmsford-driving-test-routes.php",
+        "publisher": "Driving Test Centre",
+        "accessedAt": "2026-10-26"
+      },
+      "status": "historical-reference",
+      "lastVerifiedAt": null,
+      "geometry": null,
+      "skillsStatus": "suggested-practice-focus",
+      "navigation": null,
+      "startLocationStatus": "obsolete-source-start"
+    },
+    {
+      "id": "chelmsford-04",
+      "number": 4,
+      "centreId": "chelmsford",
+      "title": "Melbourne & north Chelmsford \u2014 historical",
+      "summary": "A second historical reference for learning the area, not a current-centre navigation plan.",
+      "roads": [
+        "Broomfield Road",
+        "Corporation Road",
+        "Patching Hall Lane",
+        "School Lane"
+      ],
+      "skills": [
+        "Junctions",
+        "Lane planning"
+      ],
+      "source": {
+        "url": "https://www.driving-test-centre.com/chelmsford-driving-test-routes.php",
+        "publisher": "Driving Test Centre",
+        "accessedAt": "2026-10-26"
+      },
+      "status": "historical-reference",
+      "lastVerifiedAt": null,
+      "geometry": null,
+      "skillsStatus": "suggested-practice-focus",
+      "navigation": null,
+      "startLocationStatus": "obsolete-source-start"
     }
   ]
 }

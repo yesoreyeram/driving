@@ -11,9 +11,9 @@ export function validateProgress(value, routeIds) {
   // Whitelist fields rather than retaining arbitrary imported properties.
   return {version:1,bookmarks:[...new Set(value.bookmarks)],scenarioChecks:[...new Set(value.scenarioChecks)],sessions:value.sessions.map(({id,routeId,date,minutes,confidence,notes})=>({id,routeId,date,minutes,confidence,notes}))};
 }
-export function filterRoutes(routes, {query='',skill='',savedOnly=false,bookmarks=[]}={}) {
+export function filterRoutes(routes, {query='',skill='',savedOnly=false,bookmarks=[],centreId=''}={}) {
   const q=query.trim().toLowerCase();
-  return routes.filter(r=>(!q || [r.title,r.number,...r.roads,...r.skills].join(' ').toLowerCase().includes(q)) && (!skill || r.skills.includes(skill)) && (!savedOnly || bookmarks.includes(r.id)));
+  return routes.filter(r=>(!centreId || r.centreId===centreId) && (!q || [r.title,r.number,...r.roads,...r.skills].join(' ').toLowerCase().includes(q)) && (!skill || r.skills.includes(skill)) && (!savedOnly || bookmarks.includes(r.id)));
 }
 export function summary(progress) {
   return {sessions:progress.sessions.length, routes:new Set(progress.sessions.map(s=>s.routeId)).size, minutes:progress.sessions.reduce((a,s)=>a+s.minutes,0)};
@@ -24,7 +24,10 @@ export function contributionUrl({kind,title,roads,notes,evidence}) {
 }
 export function navigationLegs(points) {
   if (!Array.isArray(points) || points.length<2) return [];
-  for(const p of points) if(!Number.isFinite(p.lat)||!Number.isFinite(p.lon)||Math.abs(p.lat)>90||Math.abs(p.lon)>180) throw new Error('Invalid route coordinate.');
+  for(const p of points) {
+    if(typeof p.location==='string' && p.location.trim().length>0 && p.location.length<=300)continue;
+    if(!Number.isFinite(p.lat)||!Number.isFinite(p.lon)||Math.abs(p.lat)>90||Math.abs(p.lon)>180) throw new Error('Invalid route coordinate or location.');
+  }
   const legs=[];
   // Three intermediate points is the documented mobile-browser limit.
   for(let start=0;start<points.length-1;start+=4) legs.push(points.slice(start,start+5));
@@ -33,12 +36,15 @@ export function navigationLegs(points) {
 export function googleMapsUrl(points) {
   if(points.length<2 || points.length>5) throw new Error('A navigation leg needs 2–5 points.');
   navigationLegs(points);
-  const coord=p=>`${p.lat},${p.lon}`;
+  const coord=p=>p.location || `${p.lat},${p.lon}`;
   const q=new URLSearchParams({api:'1',origin:coord(points[0]),destination:coord(points.at(-1)),travelmode:'driving'});
   if(points.length>2)q.set('waypoints',points.slice(1,-1).map(coord).join('|'));
   return 'https://www.google.com/maps/dir/?'+q;
 }
 const xml=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]));
+export function navigationPoints(route) {
+  return route.navigation?.waypoints || route.navigation?.locations?.map(location=>({location})) || [];
+}
 export function routeGpx(route) {
   const points=route.navigation?.waypoints;
   if(!points || !navigationLegs(points).length)throw new Error('This route has no navigation waypoints.');
