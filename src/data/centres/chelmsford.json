@@ -1,0 +1,19 @@
+{
+  "id": "chelmsford",
+  "name": "Chelmsford",
+  "county": "Essex",
+  "area": "Essex, East of England",
+  "meetingArea": "Check the current meeting point in your booking",
+  "notice": "Historical road familiarisation only: these routes start at the former Hoffmanns Way centre. DVSA announced a move to Hanbury Road in 2018, and its May 2025 disclosure log records a further closure/relocation. The current meeting point is not verified here. Navigation from the obsolete start is unavailable; check your booking.",
+  "locationStatus": "current-meeting-point-unconfirmed",
+  "routes": [
+    {
+      "id": "chelmsford-03",
+      "path": "../routes/chelmsford-03.json"
+    },
+    {
+      "id": "chelmsford-04",
+      "path": "../routes/chelmsford-04.json"
+    }
+  ]
+}

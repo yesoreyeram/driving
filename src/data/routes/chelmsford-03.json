@@ -1,0 +1,23 @@
+{
+  "id": "chelmsford-03",
+  "number": 3,
+  "centreId": "chelmsford",
+  "title": "Springfield & Broomfield — historical",
+  "summary": "Road highlights from a published route starting at the former Hoffmanns Way site.",
+  "roads": [
+    "Springfield Road",
+    "Pump Lane",
+    "Essex Regiment Way",
+    "Broomfield Road"
+  ],
+  "skills": [
+    "Roundabouts",
+    "Observation"
+  ],
+  "status": "historical-reference",
+  "lastVerifiedAt": null,
+  "geometry": null,
+  "skillsStatus": "suggested-practice-focus",
+  "navigation": null,
+  "startLocationStatus": "obsolete-start"
+}

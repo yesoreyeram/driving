@@ -1,28 +1,24 @@
 # Contributing
 
-Start with a GitHub issue or the app's Community form. Route contributions are proposals until reviewed; a successful test suite does not establish road safety.
+Start with a GitHub issue or the app's Community form. Route proposals need human review; passing tests does not establish road safety.
 
-## Routes and centres
+## Add a route
 
-1. Identify the centre and route, with stable IDs. Include source URLs, observation date and permission to share the material.
-2. Supply original route points or permission-cleared GPX. Remove personal names, vehicle registrations, timestamps and private start/end locations. Never upload an entire private driving history.
-3. Compare waypoints against current road access, one-way restrictions and current signs. An independent reviewer must validate the road path before adding a verification date or verified geometry.
-4. Describe uncertainty and changes. Do not infer speed limits, priorities or lane instructions from old map imagery. Avoid directions that lead onto restricted or unsuitable roads.
-5. Add the record to `dist/data/routes.json` and extend tests for route-specific invariants. Run `npm run check`.
-6. Submit a pull request. A maintainer checks provenance, data permissions, geometry, navigation compatibility, accessibility and safety before merge.
+1. Create `src/data/routes/<route-id>.json` using the [data contract](docs/data-model.md). Choose a stable ID that is unique across centres.
+2. Add `{ "id": "<route-id>", "path": "../routes/<route-id>.json" }` to the appropriate `src/data/centres/<centre-id>.json` route index.
+3. Supply accurate road details, ordered navigation points if available, observation dates and permission to share the material. Remove personal names, vehicle registrations, timestamps and private start/end locations from GPS data.
+4. Keep `lastVerifiedAt` and `geometry` null until independent road verification. Do not infer speed limits, priorities or lane instructions from old imagery. Do not enable navigation from an obsolete starting point.
+5. Run `npm run build`. Check the centre selector, route search, journal and navigation exports locally with `npm run dev`.
+6. Submit a pull request. Maintainers review accuracy, permissions, access restrictions, navigation compatibility and accessibility.
 
-New centres follow the same contract. Use a new `centreId`; do not hard-code another centre into the navigation exporter.
+## Add a centre
 
-## Code and content permissions
+Create `src/data/centres/<centre-id>.json` with its metadata and route index, then add `{ "id": "<centre-id>", "path": "./centres/<centre-id>.json" }` to `src/data/index.json`. Add its route files and tests. The loader validates index paths, IDs and route ownership.
 
-Code contributions use the project's MIT licence. Provide your own writing and route observations, or explicitly document permission and the source's licence. Original factual community data can be proposed under CC0, with that permission stated in the issue/PR. Do not assume that a publicly visible route site, diagram or commercial route database is open licensed. Third-party material retains its own terms.
+## Code and data
 
-## Review states
+Code contributions use the MIT licence. Submit your own writing and observations or material you have permission to contribute. Do not include private GPS history. Map providers retain their own terms and required attribution.
 
-`source-linked` → `community-reviewed` → `road-verified` → `stale` / `withdrawn`.
+Use Node.js 22+; no external runtime packages are required. `npm run check` validates code, registry links, navigation exports, progress compatibility and the local server. Verify Android/iOS imports on physical devices before claiming native compatibility.
 
-The current UI seeds only use `source-linked`. Future statuses require reviewer identity, evidence, verification timestamp and re-verification policy; do not just change a badge. Corrections to potentially dangerous advice should be reviewed before feature work. If a route becomes invalid, withdraw it from practice recommendations until resolved.
-
-## Checks
-
-Use Node 22+ and run `npm run check`. Exercise navigation export, search, keyboard controls, small-screen layout and storage failure handling when changing those areas. Device-level GPX imports and native app opening should be checked on Android and iOS before marking compatibility verified.
+Current route states are `unverified` and `historical-reference`. Future verified states need independent reviewer evidence, a verification date and a re-check policy. Withdraw invalid routes until corrected.

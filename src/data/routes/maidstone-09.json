@@ -1,0 +1,74 @@
+{
+  "id": "maidstone-09",
+  "number": 9,
+  "centreId": "maidstone",
+  "title": "Pendenden Heath & Fairmeadow",
+  "summary": "Build confidence across the north and town centre.",
+  "roads": [
+    "Pendenden Heath",
+    "Hardy Street",
+    "Fairmeadow"
+  ],
+  "skills": [
+    "Lane planning",
+    "Traffic lights"
+  ],
+  "status": "unverified",
+  "lastVerifiedAt": null,
+  "geometry": null,
+  "skillsStatus": "suggested-practice-focus",
+  "navigation": {
+    "kind": "waypoint-plan",
+    "waypoints": [
+      {
+        "lat": 51.260792,
+        "lon": 0.526939,
+        "label": "DVSA Driving Test Centre, 2 Armstrong Rd, Maidstone ME15 6AZ"
+      },
+      {
+        "lat": 51.2716728,
+        "lon": 0.5261151,
+        "label": "Romney Pl, Maidstone"
+      },
+      {
+        "lat": 51.2774756,
+        "lon": 0.5350085,
+        "label": "Claremont Rd, Maidstone"
+      },
+      {
+        "lat": 51.2776931,
+        "lon": 0.5399314,
+        "label": "Alkham Rd, Maidstone"
+      },
+      {
+        "lat": 51.2871411,
+        "lon": 0.5388724,
+        "label": "Penenden Heath Rd, Penenden Heath, Maidstone"
+      },
+      {
+        "lat": 51.2812884,
+        "lon": 0.5241295,
+        "label": "Hardy St, Maidstone"
+      },
+      {
+        "lat": 51.273178,
+        "lon": 0.5212032,
+        "label": "High St, Maidstone"
+      },
+      {
+        "lat": 51.2624756,
+        "lon": 0.5235696,
+        "label": "Postley Road, Maidstone"
+      },
+      {
+        "lat": 51.260792,
+        "lon": 0.526939,
+        "label": "DVSA Driving Test Centre, Kings Row, Armstrong Road, Maidstone"
+      }
+    ],
+    "roadPathVerified": false,
+    "maps": [
+      "https://www.google.com/maps/embed?pb=!1m70!1m12!1m3!1d19967.84768738641!2d0.512233329148626!3d51.27466954170716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m55!3e0!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+2+Armstrong+Rd,+Maidstone+ME15+6AZ!3m2!1d51.260791999999995!2d0.5269389999999999!4m5!1s0x47df322558917c53:0x4eb85344fb07bb1!2sRomney+Pl,+Maidstone!3m2!1d51.2716728!2d0.5261151!4m5!1s0x47df323c28351405:0xcf745b56d50c753a!2sClaremont+Rd,+Maidstone!3m2!1d51.277475599999995!2d0.5350085!4m5!1s0x47df3215dff45149:0x79c31683b1320734!2sAlkham+Rd,+Maidstone!3m2!1d51.2776931!2d0.5399314!4m5!1s0x47df326a13cb7bc1:0x83d682a455476a8!2sPenenden+Heath+Rd,+Penenden+Heath,+Maidstone!3m2!1d51.2871411!2d0.5388724!4m5!1s0x47df3237c7554cdb:0x12331506b856c70c!2sHardy+St,+Maidstone!3m2!1d51.2812884!2d0.5241295!4m5!1s0x47df3231c23fd635:0xb8a3f6e347e2e0f3!2sHigh+St,+Maidstone!3m2!1d51.273177999999994!2d0.5212032!4m5!1s0x47df31878e756ffb:0xdcccc57801969743!2sPostley+Road,+Maidstone!3m2!1d51.262475599999995!2d0.5235696!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+Kings+Row,+Armstrong+Road,+Maidstone!3m2!1d51.260791999999995!2d0.5269389999999999!5e0!3m2!1sen!2suk!4v1665501230552!5m2!1sen!2suk"
+    ]
+  }
+}

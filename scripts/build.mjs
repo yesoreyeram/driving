@@ -1,7 +1,7 @@
 import {cp, mkdir, readdir, rm, writeFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 
-const source = new URL('../dist/', import.meta.url);
+const source = new URL('../src/', import.meta.url);
 const output = new URL('../_site/', import.meta.url);
 
 // Pages artifacts cannot contain symlinks. Fail rather than packaging targets

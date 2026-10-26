@@ -1,0 +1,54 @@
+{
+  "id": "crawley-02",
+  "number": 2,
+  "centreId": "crawley",
+  "title": "Tilgate & Furnace Green",
+  "summary": "Explore a published road sequence around Tilgate and Furnace Green.",
+  "roads": [
+    "Tilgate Way",
+    "Weald Drive",
+    "Furnace Drive",
+    "Hawth Avenue"
+  ],
+  "skills": [
+    "Junctions",
+    "Traffic lights"
+  ],
+  "status": "unverified",
+  "lastVerifiedAt": null,
+  "geometry": null,
+  "skillsStatus": "suggested-practice-focus",
+  "navigation": {
+    "kind": "road-plan",
+    "locations": [
+      "Crawley Driving Test Centre, The Pavilions, Brighton Road, Pease Pottage, RH11 9BJ",
+      "Brighton Road, Crawley, West Sussex",
+      "Southgate Avenue, Crawley, West Sussex",
+      "Tilgate Way, Crawley, West Sussex",
+      "Ashdown Drive, Crawley, West Sussex",
+      "Weald Drive, Crawley, West Sussex",
+      "Loppets Road, Crawley, West Sussex",
+      "Shackleton Road, Crawley, West Sussex",
+      "Loppets Road, Crawley, West Sussex",
+      "Furnace Drive, Crawley, West Sussex",
+      "Sylvan Road, Crawley, West Sussex",
+      "Newmarket Road, Crawley, West Sussex",
+      "Furnace Drive, Crawley, West Sussex",
+      "The Glade, Crawley, West Sussex",
+      "Weald Drive, Crawley, West Sussex",
+      "Hawth Avenue, Crawley, West Sussex",
+      "Haslett Avenue East, Crawley, West Sussex",
+      "College Road, Crawley, West Sussex",
+      "Exchange Road, Crawley, West Sussex",
+      "Kilnmead, Crawley, West Sussex",
+      "High Street, Crawley, West Sussex",
+      "Ifield Avenue, Crawley, West Sussex",
+      "Crawley Avenue, Crawley, West Sussex",
+      "Brighton Road, Crawley, West Sussex",
+      "Crawley Driving Test Centre, The Pavilions, Brighton Road, Pease Pottage, RH11 9BJ"
+    ],
+    "roadPathVerified": false,
+    "maps": []
+  },
+  "startLocationStatus": "unverified-start"
+}

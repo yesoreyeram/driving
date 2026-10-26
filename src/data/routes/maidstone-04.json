@@ -1,0 +1,79 @@
+{
+  "id": "maidstone-04",
+  "number": 4,
+  "centreId": "maidstone",
+  "title": "Park Way & Bearsted",
+  "summary": "Connect town roads with the Bearsted area.",
+  "roads": [
+    "Park Way",
+    "Bearsted Road",
+    "Provender Way"
+  ],
+  "skills": [
+    "Roundabouts",
+    "Traffic lights"
+  ],
+  "status": "unverified",
+  "lastVerifiedAt": null,
+  "geometry": null,
+  "skillsStatus": "suggested-practice-focus",
+  "navigation": {
+    "kind": "waypoint-plan",
+    "waypoints": [
+      {
+        "lat": 51.260792,
+        "lon": 0.526939,
+        "label": "DVSA Driving Test Centre, 2 Armstrong Rd, Maidstone ME15 6AZ"
+      },
+      {
+        "lat": 51.2704488,
+        "lon": 0.5328943,
+        "label": "Mote Avenue, Maidstone"
+      },
+      {
+        "lat": 51.272251,
+        "lon": 0.5319553,
+        "label": "Square Hill Road, Maidstone"
+      },
+      {
+        "lat": 51.2761893,
+        "lon": 0.5267176,
+        "label": "Union Street, Maidstone"
+      },
+      {
+        "lat": 51.2822141,
+        "lon": 0.5321465,
+        "label": "Park Ave, Maidstone"
+      },
+      {
+        "lat": 51.2827573,
+        "lon": 0.55267,
+        "label": "Bearsted Rd, Maidstone"
+      },
+      {
+        "lat": 51.2753702,
+        "lon": 0.5512905,
+        "label": "Provender Way, Weavering, Maidstone"
+      },
+      {
+        "lat": 51.272251,
+        "lon": 0.5319553,
+        "label": "Square Hill Road, Maidstone"
+      },
+      {
+        "lat": 51.2647088,
+        "lon": 0.5260097,
+        "label": "Sheal's Crescent, Maidstone"
+      },
+      {
+        "lat": 51.260792,
+        "lon": 0.526939,
+        "label": "DVSA Driving Test Centre, Kings Row, Armstrong Road, Maidstone"
+      }
+    ],
+    "roadPathVerified": false,
+    "maps": [
+      "https://www.google.com/maps/embed?pb=!1m76!1m12!1m3!1d19968.50424698307!2d0.5208130791455097!3d51.273158842574624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e0!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+2+Armstrong+Rd,+Maidstone+ME15+6AZ!3m2!1d51.260791999999995!2d0.5269389999999999!4m5!1s0x47df3223707f04db:0xbaa34032923da832!2sMote+Avenue,+Maidstone!3m2!1d51.2704488!2d0.5328942999999999!4m5!1s0x47df322355c08fd5:0xc52d054240fedee1!2sSquare+Hill+Road,+Maidstone!3m2!1d51.272251!2d0.5319553!4m5!1s0x47df323a70c0e599:0x18f30385da53dcf2!2sUnion+Street,+Maidstone!3m2!1d51.2761893!2d0.5267176!4m5!1s0x47df323f63bc7901:0xf86168ffc72d5a86!2sPark+Ave,+Maidstone!3m2!1d51.2822141!2d0.5321465!4m5!1s0x47df3272d685b5ad:0xe13b418e2668be1d!2sBearsted+Rd,+Maidstone!3m2!1d51.2827573!2d0.55267!4m5!1s0x47df320e51b720b1:0x25668e36cb94063c!2sProvender+Way,+Weavering,+Maidstone!3m2!1d51.2753702!2d0.5512905!4m5!1s0x47df322355c08fd5:0xc52d054240fedee1!2sSquare+Hill+Road,+Maidstone!3m2!1d51.272251!2d0.5319553!4m5!1s0x47df32288103e65d:0xd654b1d1d872640d!2sSheal's+Crescent,+Maidstone!3m2!1d51.2647088!2d0.5260097!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+Kings+Row,+Armstrong+Road,+Maidstone!3m2!1d51.260791999999995!2d0.5269389999999999!5e0!3m2!1sen!2suk!4v1664969191274!5m2!1sen!2suk"
+    ]
+  }
+}

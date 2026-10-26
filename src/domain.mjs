@@ -19,7 +19,7 @@ export function summary(progress) {
   return {sessions:progress.sessions.length, routes:new Set(progress.sessions.map(s=>s.routeId)).size, minutes:progress.sessions.reduce((a,s)=>a+s.minutes,0)};
 }
 export function contributionUrl({kind,title,roads,notes,evidence}) {
-  const body=`## ${kind}\n\n### Location / route\n${roads}\n\n### Details\n${notes}\n\n### Evidence / provenance\n${evidence}\n\n### Review checklist\n- [ ] Current signs, access restrictions and legality checked\n- [ ] No learner personal data or private GPS traces\n- [ ] Permission to contribute all supplied material\n- [ ] Independent reviewer confirms before publication\n\nSubmitted via Routewise. This is a proposal, not a verified route.`;
+  const body=`## ${kind}\n\n### Location / route\n${roads}\n\n### Details\n${notes}\n\n### Observations and permission\n${evidence}\n\n### Review checklist\n- [ ] Current signs, access restrictions and legality checked\n- [ ] No learner personal data or private GPS traces\n- [ ] Permission to contribute all supplied material\n- [ ] Independent reviewer confirms before publication\n\nSubmitted via Routewise. This is a proposal, not a verified route.`;
   return `https://github.com/yesoreyeram/driving/issues/new?${new URLSearchParams({title:`[${kind}] ${title}`,body})}`;
 }
 export function navigationLegs(points) {
@@ -48,6 +48,6 @@ export function navigationPoints(route) {
 export function routeGpx(route) {
   const points=route.navigation?.waypoints;
   if(!points || !navigationLegs(points).length)throw new Error('This route has no navigation waypoints.');
-  // rtept, not trkpt: sparse source anchors are not a recorded road-following track.
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="Routewise" xmlns="http://www.topografix.com/GPX/1/1"><metadata><name>${xml(route.title)}</name><desc>Unverified source waypoint plan. Calculate between points with a car routing profile and review before driving. Not an official DVSA route.</desc><link href="${xml(route.source.url)}"><text>Original source</text></link></metadata><rte><name>${xml(route.title)}</name><desc>Keep point order. Full plan, not a verified road trace.</desc>${points.map((p,i)=>`<rtept lat="${p.lat}" lon="${p.lon}"><name>${xml(`${String(i+1).padStart(2,'0')} · ${p.label}`)}</name></rtept>`).join('')}</rte></gpx>\n`;
+  // rtept, not trkpt: sparse route anchors are not a recorded road-following track.
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="Routewise" xmlns="http://www.topografix.com/GPX/1/1"><metadata><name>${xml(route.title)}</name><desc>Unverified waypoint plan. Calculate between points with a car routing profile and review before driving. Not an official DVSA route.</desc></metadata><rte><name>${xml(route.title)}</name><desc>Keep point order. Full plan, not a verified road trace.</desc>${points.map((p,i)=>`<rtept lat="${p.lat}" lon="${p.lon}"><name>${xml(`${String(i+1).padStart(2,'0')} · ${p.label}`)}</name></rtept>`).join('')}</rte></gpx>\n`;
 }

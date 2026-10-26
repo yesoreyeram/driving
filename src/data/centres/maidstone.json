@@ -1,0 +1,49 @@
+{
+  "id": "maidstone",
+  "name": "Maidstone",
+  "area": "Kent, South East England",
+  "meetingArea": "Armstrong Road",
+  "county": "Kent",
+  "routes": [
+    {
+      "id": "maidstone-01",
+      "path": "../routes/maidstone-01.json"
+    },
+    {
+      "id": "maidstone-02",
+      "path": "../routes/maidstone-02.json"
+    },
+    {
+      "id": "maidstone-03",
+      "path": "../routes/maidstone-03.json"
+    },
+    {
+      "id": "maidstone-04",
+      "path": "../routes/maidstone-04.json"
+    },
+    {
+      "id": "maidstone-05",
+      "path": "../routes/maidstone-05.json"
+    },
+    {
+      "id": "maidstone-06",
+      "path": "../routes/maidstone-06.json"
+    },
+    {
+      "id": "maidstone-07",
+      "path": "../routes/maidstone-07.json"
+    },
+    {
+      "id": "maidstone-08",
+      "path": "../routes/maidstone-08.json"
+    },
+    {
+      "id": "maidstone-09",
+      "path": "../routes/maidstone-09.json"
+    },
+    {
+      "id": "maidstone-10",
+      "path": "../routes/maidstone-10.json"
+    }
+  ]
+}
