@@ -1,0 +1,1282 @@
+{
+  "schemaVersion": 1,
+  "centres": [
+    {
+      "id": "maidstone",
+      "name": "Maidstone",
+      "area": "Kent, South East England",
+      "meetingArea": "Armstrong Road",
+      "source": "https://maidstonetestroutes.com/amp/",
+      "county": "Kent"
+    },
+    {
+      "id": "crawley",
+      "name": "Crawley",
+      "county": "West Sussex",
+      "area": "West Sussex, South East England",
+      "meetingArea": "The Pavilions, Brighton Road, Pease Pottage",
+      "source": "https://www.passmefast.co.uk/test-centres/practical/west-sussex/crawley",
+      "notice": "Published road plans are historical and have not been checked on the road. Confirm the current centre location and access in your booking. Google Maps resolves road names; check each point before driving.",
+      "locationStatus": "source-listed-unverified"
+    },
+    {
+      "id": "chelmsford",
+      "name": "Chelmsford",
+      "county": "Essex",
+      "area": "Essex, East of England",
+      "meetingArea": "Check the current meeting point in your booking",
+      "source": "https://www.gov.uk/find-driving-test-centre",
+      "notice": "Historical road familiarisation only: these source routes start at the former Hoffmanns Way centre. DVSA announced a move to Hanbury Road in 2018, and its May 2025 disclosure log records a further closure/relocation. The current meeting point is not verified here. Navigation from the obsolete start is unavailable; check your booking.",
+      "locationStatus": "current-meeting-point-unconfirmed",
+      "locationSources": [
+        "https://content.govdelivery.com/accounts/UKDVSA/bulletins/2195408",
+        "https://www.gov.uk/csv-preview/6879043b0263c35f52e4dd9f/dvsa-foi-disclosure-log-may-2025.csv"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "maidstone-01",
+      "number": 1,
+      "centreId": "maidstone",
+      "title": "St Philips & Kingsley",
+      "summary": "Town streets, mini roundabouts and residential roads.",
+      "roads": [
+        "St Philips Avenue",
+        "Kingsley Street",
+        "Brunswick Road East"
+      ],
+      "skills": [
+        "Roundabouts",
+        "Meeting traffic"
+      ],
+      "source": {
+        "url": "https://maidstonetestroutes.com/st-philips-kingsley-brunswick-street-test-route/",
+        "publisher": "Maidstone Test Routes",
+        "accessedAt": "2026-10-26"
+      },
+      "status": "source-linked",
+      "lastVerifiedAt": null,
+      "geometry": null,
+      "skillsStatus": "suggested-practice-focus",
+      "navigation": {
+        "kind": "source-waypoint-plan",
+        "waypoints": [
+          {
+            "lat": 51.260792,
+            "lon": 0.526939,
+            "label": "DVSA Driving Test Centre, 2 Armstrong Rd, Maidstone ME15 6AZ",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2611002,
+            "lon": 0.5261414,
+            "label": "Source map 1 \u00b7 point 2",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.262513,
+            "lon": 0.5221777,
+            "label": "Quarry Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2653579,
+            "lon": 0.5227065,
+            "label": "Source map 1 \u00b7 point 4",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2652603,
+            "lon": 0.5222143,
+            "label": "Old Tovil Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2625347,
+            "lon": 0.5192982,
+            "label": "Courtenay Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2624756,
+            "lon": 0.5235696,
+            "label": "Postley Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2670553,
+            "lon": 0.522969,
+            "label": "Hayle Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2795752,
+            "lon": 0.5203485,
+            "label": "Staceys Street, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2803413,
+            "lon": 0.5225123,
+            "label": "Lower Boxley Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2793607,
+            "lon": 0.5254005,
+            "label": "Well Road, Maidstone",
+            "sourceMap": 2
+          },
+          {
+            "lat": 51.2785766,
+            "lon": 0.526739,
+            "label": "Wheeler Street, Maidstone",
+            "sourceMap": 2
+          },
+          {
+            "lat": 51.2761893,
+            "lon": 0.5267176,
+            "label": "Union Street, Maidstone",
+            "sourceMap": 2
+          },
+          {
+            "lat": 51.2753512,
+            "lon": 0.5271221,
+            "label": "Wyatt Street, Maidstone",
+            "sourceMap": 2
+          },
+          {
+            "lat": 51.2745897,
+            "lon": 0.5267197,
+            "label": "Source map 2 \u00b7 point 6",
+            "sourceMap": 2
+          },
+          {
+            "lat": 51.2738033,
+            "lon": 0.5258412,
+            "label": "Church Street, Maidstone",
+            "sourceMap": 2
+          },
+          {
+            "lat": 51.2737555,
+            "lon": 0.5262849,
+            "label": "King Street, Maidstone",
+            "sourceMap": 2
+          },
+          {
+            "lat": 51.272251,
+            "lon": 0.5319553,
+            "label": "Square Hill Road, Maidstone",
+            "sourceMap": 2
+          },
+          {
+            "lat": 51.2704488,
+            "lon": 0.5328943,
+            "label": "Mote Avenue, Maidstone",
+            "sourceMap": 3
+          },
+          {
+            "lat": 51.2661636,
+            "lon": 0.5319029,
+            "label": "Upper Road, Maidstone",
+            "sourceMap": 3
+          },
+          {
+            "lat": 51.2668572,
+            "lon": 0.5296183,
+            "label": "St Philip's Ave, Maidstone",
+            "sourceMap": 3
+          },
+          {
+            "lat": 51.267474,
+            "lon": 0.5285111,
+            "label": "Waterloo Street, Maidstone",
+            "sourceMap": 3
+          },
+          {
+            "lat": 51.2690603,
+            "lon": 0.5281553,
+            "label": "Kingsley Road, Maidstone",
+            "sourceMap": 3
+          },
+          {
+            "lat": 51.2693698,
+            "lon": 0.5270009,
+            "label": "Brunswick Street East, Maidstone",
+            "sourceMap": 3
+          },
+          {
+            "lat": 51.2647088,
+            "lon": 0.5260097,
+            "label": "Sheal's Crescent, Maidstone",
+            "sourceMap": 3
+          },
+          {
+            "lat": 51.2624756,
+            "lon": 0.5235696,
+            "label": "Postley Road, Maidstone",
+            "sourceMap": 3
+          },
+          {
+            "lat": 51.260792,
+            "lon": 0.526939,
+            "label": "DVSA Driving Test Centre, Kings Row, Armstrong Road, Maidstone",
+            "sourceMap": 3
+          }
+        ],
+        "sourceMaps": [
+          "https://www.google.com/maps/embed?pb=!1m72!1m12!1m3!1d9984.825981635473!2d0.5125254421447615!3d51.27051794845838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m57!3e0!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+2+Armstrong+Rd,+Maidstone+ME15+6AZ!3m2!1d51.260791999999995!2d0.5269389999999999!4m3!3m2!1d51.261100199999994!2d0.5261414!4m5!1s0x47df3229c423df1b:0xdb65d19063a144ce!2sQuarry+Road,+Maidstone!3m2!1d51.262513!2d0.5221777!4m3!3m2!1d51.2653579!2d0.5227065!4m5!1s0x47df322910f32a33:0xeca2d4f61c6a3732!2sOld+Tovil+Road,+Maidstone!3m2!1d51.265260299999994!2d0.5222143!4m5!1s0x47df322a1acbb4e5:0xa9127633dc7609e2!2sCourtenay+Road,+Maidstone!3m2!1d51.262534699999996!2d0.5192981999999999!4m5!1s0x47df31878e756ffb:0xdcccc57801969743!2sPostley+Road,+Maidstone!3m2!1d51.262475599999995!2d0.5235696!4m5!1s0x47df3228d57862c5:0x4b0e3bb42a5535d6!2sHayle+Road,+Maidstone!3m2!1d51.267055299999996!2d0.522969!4m5!1s0x47df3234287e43bb:0x59d12fa75c445d25!2sStaceys+Street,+Maidstone!3m2!1d51.2795752!2d0.5203485!4m5!1s0x47df323655969fbb:0xd9575dd1c17ae662!2sLower+Boxley+Road,+Maidstone!3m2!1d51.280341299999996!2d0.5225122999999999!5e0!3m2!1sen!2suk!4v1663758943741!5m2!1sen!2suk",
+          "https://www.google.com/maps/embed?pb=!1m66!1m12!1m3!1d4991.755431235009!2d0.5236054779772927!3d51.2765699799513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m51!3e0!4m3!3m2!1d51.280341899999996!2d0.5225131!4m5!1s0x47df323768b3609d:0x446a7c3c68d23ceb!2sWell+Road,+Maidstone!3m2!1d51.2793607!2d0.5254004999999999!4m5!1s0x47df3239932212e7:0xd5faf27f1ac622ab!2sWheeler+Street,+Maidstone!3m2!1d51.2785766!2d0.526739!4m5!1s0x47df323a70c0e599:0x18f30385da53dcf2!2sUnion+Street,+Maidstone!3m2!1d51.2761893!2d0.5267176!4m5!1s0x47df323a634f7b77:0xe1f1ad8058888353!2sWyatt+Street,+Maidstone!3m2!1d51.275351199999996!2d0.5271220999999999!4m3!3m2!1d51.2745897!2d0.5267197!4m5!1s0x47df323060a375a7:0x3e6e17b5cfb59c1e!2sChurch+Street,+Maidstone!3m2!1d51.2738033!2d0.5258412!4m5!1s0x47df323aa24ad1ef:0x6954859345acb1bb!2sKing+Street,+Maidstone!3m2!1d51.2737555!2d0.5262848999999999!4m5!1s0x47df322355c08fd5:0xc52d054240fedee1!2sSquare+Hill+Road,+Maidstone!3m2!1d51.272251!2d0.5319553!5e0!3m2!1sen!2suk!4v1663759279867!5m2!1sen!2suk",
+          "https://www.google.com/maps/embed?pb=!1m76!1m12!1m3!1d9985.704938864674!2d0.5205556421426922!3d51.2664727996299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e0!4m5!1s0x47df322355c08fd5:0xc52d054240fedee1!2sSquare+Hill+Rd,+Maidstone!3m2!1d51.272251!2d0.5319553!4m5!1s0x47df3223707f04db:0xbaa34032923da832!2sMote+Avenue,+Maidstone!3m2!1d51.2704488!2d0.5328942999999999!4m5!1s0x47df32214cb2497b:0x9c6b2b0aa2fbaef5!2sUpper+Road,+Maidstone!3m2!1d51.2661636!2d0.5319029!4m5!1s0x47df32268f87f2ff:0xd8444a48838ee5f2!2sSt+Philip's+Ave,+Maidstone!3m2!1d51.2668572!2d0.5296183!4m5!1s0x47df3225d9ec4ce7:0x26eb4ea02ae13603!2sWaterloo+Street,+Maidstone!3m2!1d51.267474!2d0.5285111!4m5!1s0x47df3225baf0c70b:0xf77923000112e1fe!2sKingsley+Road,+Maidstone!3m2!1d51.2690603!2d0.5281553!4m5!1s0x47df32259a738a77:0x213f416c7666cf81!2sBrunswick+Street+East,+Maidstone!3m2!1d51.2693698!2d0.5270009!4m5!1s0x47df32288103e65d:0xd654b1d1d872640d!2sSheal's+Crescent,+Maidstone!3m2!1d51.2647088!2d0.5260097!4m5!1s0x47df31878e756ffb:0xdcccc57801969743!2sPostley+Road,+Maidstone!3m2!1d51.262475599999995!2d0.5235696!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+Kings+Row,+Armstrong+Road,+Maidstone!3m2!1d51.260791999999995!2d0.5269389999999999!5e0!3m2!1sen!2suk!4v1663759465697!5m2!1sen!2suk"
+        ],
+        "roadPathVerified": false
+      }
+    },
+    {
+      "id": "maidstone-02",
+      "number": 2,
+      "centreId": "maidstone",
+      "title": "Longshaw & Bicknor",
+      "summary": "A south-east loop through residential neighbourhoods.",
+      "roads": [
+        "Longshaw Road",
+        "Selby Road",
+        "Bicknor Road"
+      ],
+      "skills": [
+        "Junctions",
+        "Traffic lights"
+      ],
+      "source": {
+        "url": "https://maidstonetestroutes.com/longshaw-selby-bicknor-road-test-route-no-2/",
+        "publisher": "Maidstone Test Routes",
+        "accessedAt": "2026-10-26"
+      },
+      "status": "source-linked",
+      "lastVerifiedAt": null,
+      "geometry": null,
+      "skillsStatus": "suggested-practice-focus",
+      "navigation": {
+        "kind": "source-waypoint-plan",
+        "waypoints": [
+          {
+            "lat": 51.260792,
+            "lon": 0.526939,
+            "label": "DVSA Driving Test Centre, 2 Armstrong Rd, Maidstone ME15 6AZ",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2615696,
+            "lon": 0.5278605,
+            "label": "Armstrong Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2578068,
+            "lon": 0.5312055,
+            "label": "Source map 1 \u00b7 point 3",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2426448,
+            "lon": 0.5598306,
+            "label": "Sutton Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2406359,
+            "lon": 0.5552473,
+            "label": "Wallis Avenue, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2412252,
+            "lon": 0.5492692,
+            "label": "Source map 1 \u00b7 point 6",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2430624,
+            "lon": 0.5505095,
+            "label": "Wrangleden Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.239805,
+            "lon": 0.5568351,
+            "label": "Longshaw Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2387808,
+            "lon": 0.5579801,
+            "label": "Selby Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2383009,
+            "lon": 0.5587664,
+            "label": "Bicknor Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2406359,
+            "lon": 0.5552473,
+            "label": "Wallis Avenue, Maidstone",
+            "sourceMap": 2
+          },
+          {
+            "lat": 51.2362664,
+            "lon": 0.5463034,
+            "label": "Brishing Lane, Maidstone",
+            "sourceMap": 2
+          },
+          {
+            "lat": 51.2282171,
+            "lon": 0.5518491,
+            "label": "Source map 2 \u00b7 point 4",
+            "sourceMap": 2
+          },
+          {
+            "lat": 51.2322336,
+            "lon": 0.5612005,
+            "label": "Source map 2 \u00b7 point 5",
+            "sourceMap": 2
+          },
+          {
+            "lat": 51.2426448,
+            "lon": 0.5598306,
+            "label": "Sutton Road, Maidstone",
+            "sourceMap": 2
+          },
+          {
+            "lat": 51.25925,
+            "lon": 0.5306767,
+            "label": "Source map 2 \u00b7 point 7",
+            "sourceMap": 2
+          },
+          {
+            "lat": 51.2615696,
+            "lon": 0.5278605,
+            "label": "Armstrong Road, Maidstone",
+            "sourceMap": 2
+          },
+          {
+            "lat": 51.260792,
+            "lon": 0.526939,
+            "label": "DVSA Driving Test Centre, Kings Row, Armstrong Road, Maidstone",
+            "sourceMap": 2
+          }
+        ],
+        "sourceMaps": [
+          "https://www.google.com/maps/embed?pb=!1m72!1m12!1m3!1d19978.566533257923!2d0.5254755290979306!3d51.25000220586932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m57!3e0!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+2+Armstrong+Rd,+Maidstone+ME15+6AZ!3m2!1d51.260791999999995!2d0.5269389999999999!4m5!1s0x47df3188101266a5:0x7b7d5aadbe671d54!2sArmstrong+Road,+Maidstone!3m2!1d51.261569599999994!2d0.5278605!4m3!3m2!1d51.2578068!2d0.5312055!4m5!1s0x47df31e0309e23e9:0x8f17a1d57d5e2238!2sSutton+Road,+Maidstone!3m2!1d51.2426448!2d0.5598306!4m5!1s0x47df31e0c964ef85:0x7d118e26fea28580!2sWallis+Avenue,+Maidstone!3m2!1d51.2406359!2d0.5552473!4m3!3m2!1d51.241225199999995!2d0.5492692!4m5!1s0x47df31e7ea2726ab:0xa7e69a6b72dc8e3d!2sWrangleden+Road,+Maidstone!3m2!1d51.2430624!2d0.5505095!4m5!1s0x47df31de38dd75e5:0x7e40fdd58e2f9bfd!2sLongshaw+Road,+Maidstone!3m2!1d51.239805!2d0.5568351!4m5!1s0x47df31de52f4ce6d:0x4a60ac1b4991704d!2sSelby+Road,+Maidstone!3m2!1d51.2387808!2d0.5579801!4m5!1s0x47df31de54e80703:0xfc61c80f41793f8!2sBicknor+Road,+Maidstone!3m2!1d51.2383009!2d0.5587664!5e0!3m2!1sen!2suk!4v1663761670449!5m2!1sen!2suk",
+          "https://www.google.com/maps/embed?pb=!1m64!1m12!1m3!1d19981.124076338358!2d0.5263900290858347!3d51.244115259248574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m49!3e0!4m5!1s0x47df31de54e80703:0xfc61c80f41793f8!2sBicknor+Road,+Maidstone!3m2!1d51.2383009!2d0.5587664!4m5!1s0x47df31e0c964ef85:0x7d118e26fea28580!2sWallis+Avenue,+Maidstone!3m2!1d51.2406359!2d0.5552473!4m5!1s0x47df31dca8179b69:0x7271b600db2fcced!2sBrishing+Lane,+Maidstone!3m2!1d51.2362664!2d0.5463034!4m3!3m2!1d51.228217099999995!2d0.5518491!4m3!3m2!1d51.2322336!2d0.5612005!4m5!1s0x47df31e0309e23e9:0x8f17a1d57d5e2238!2sSutton+Road,+Maidstone!3m2!1d51.2426448!2d0.5598306!4m3!3m2!1d51.259249999999994!2d0.5306767!4m5!1s0x47df3188101266a5:0x7b7d5aadbe671d54!2sArmstrong+Road,+Maidstone!3m2!1d51.261569599999994!2d0.5278605!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+Kings+Row,+Armstrong+Road,+Maidstone!3m2!1d51.260791999999995!2d0.5269389999999999!5e0!3m2!1sen!2suk!4v1663774371708!5m2!1sen!2suk"
+        ],
+        "roadPathVerified": false
+      }
+    },
+    {
+      "id": "maidstone-03",
+      "number": 3,
+      "centreId": "maidstone",
+      "title": "Pembroke & Stockett Lane",
+      "summary": "Explore the roads around south Maidstone and Loose.",
+      "roads": [
+        "Pembroke Road",
+        "Cobtree Road",
+        "Hanover Road",
+        "Stockett Lane"
+      ],
+      "skills": [
+        "Junctions",
+        "Observation"
+      ],
+      "source": {
+        "url": "https://maidstonetestroutes.com/pembroke-cobtree-hanover-stockett-lane-maidstone-test-route-3/",
+        "publisher": "Maidstone Test Routes",
+        "accessedAt": "2026-10-26"
+      },
+      "status": "source-linked",
+      "lastVerifiedAt": null,
+      "geometry": null,
+      "skillsStatus": "suggested-practice-focus",
+      "navigation": {
+        "kind": "source-waypoint-plan",
+        "waypoints": [
+          {
+            "lat": 51.260792,
+            "lon": 0.526939,
+            "label": "DVSA Driving Test Centre, 2 Armstrong Rd, Maidstone ME15 6AZ",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2625347,
+            "lon": 0.5192982,
+            "label": "Courtenay Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2642455,
+            "lon": 0.5156214,
+            "label": "Source map 1 \u00b7 point 3",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2644165,
+            "lon": 0.5127829,
+            "label": "Church Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2644341,
+            "lon": 0.5098925,
+            "label": "Lower Tovil, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2611077,
+            "lon": 0.5081502,
+            "label": "Burial Ground Lane, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2506642,
+            "lon": 0.4997029,
+            "label": "Dean Street, East Farleigh, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2355549,
+            "lon": 0.4929337,
+            "label": "Source map 1 \u00b7 point 8",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2353463,
+            "lon": 0.4938697,
+            "label": "Cobtree Road, Coxheath, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2343903,
+            "lon": 0.4931816,
+            "label": "Hanover Road, Coxheath, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2340206,
+            "lon": 0.4950232,
+            "label": "Source map 2 \u00b7 point 2",
+            "sourceMap": 2
+          },
+          {
+            "lat": 51.2300375,
+            "lon": 0.5111287,
+            "label": "Heath Road, Maidstone",
+            "sourceMap": 2
+          },
+          {
+            "lat": 51.2365271,
+            "lon": 0.5166277,
+            "label": "Linton Road, Maidstone",
+            "sourceMap": 2
+          },
+          {
+            "lat": 51.2399052,
+            "lon": 0.516934,
+            "label": "Old Loose Hill, Maidstone",
+            "sourceMap": 2
+          },
+          {
+            "lat": 51.2458964,
+            "lon": 0.5242304,
+            "label": "Source map 2 \u00b7 point 6",
+            "sourceMap": 2
+          },
+          {
+            "lat": 51.2465903,
+            "lon": 0.5208714,
+            "label": "Lancet Lane, Maidstone",
+            "sourceMap": 2
+          },
+          {
+            "lat": 51.2485884,
+            "lon": 0.5222336,
+            "label": "Anglesey Avenue, Maidstone",
+            "sourceMap": 2
+          },
+          {
+            "lat": 51.2506335,
+            "lon": 0.5230646,
+            "label": "Source map 2 \u00b7 point 9",
+            "sourceMap": 2
+          },
+          {
+            "lat": 51.260792,
+            "lon": 0.526939,
+            "label": "DVSA Driving Test Centre, Kings Row, Armstrong Road, Maidstone",
+            "sourceMap": 2
+          }
+        ],
+        "sourceMaps": [
+          "https://www.google.com/maps/embed?pb=!1m72!1m12!1m3!1d19978.945337247143!2d0.48742872909613477!3d51.24913030636982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m57!3e0!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+2+Armstrong+Rd,+Maidstone+ME15+6AZ!3m2!1d51.260791999999995!2d0.5269389999999999!4m5!1s0x47df322a1acbb4e5:0xa9127633dc7609e2!2sCourtenay+Road,+Maidstone!3m2!1d51.262534699999996!2d0.5192981999999999!4m3!3m2!1d51.264245499999994!2d0.5156214!4m5!1s0x47df33d5190abc29:0xc4f124613e9f8676!2sChurch+Road,+Maidstone!3m2!1d51.264416499999996!2d0.5127828999999999!4m5!1s0x47df33d5b60e7e33:0x714008b3cc753559!2sLower+Tovil,+Maidstone!3m2!1d51.264434099999995!2d0.5098925!4m5!1s0x47df317e0ae2d43f:0x97252b11a8b8f26b!2sBurial+Ground+Lane,+Maidstone!3m2!1d51.2611077!2d0.5081502!4m5!1s0x47df31695af2acc1:0x6603e1b11c581685!2sDean+Street,+East+Farleigh,+Maidstone!3m2!1d51.250664199999996!2d0.49970289999999995!4m3!3m2!1d51.2355549!2d0.4929337!4m5!1s0x47df31168f2e395b:0xca33739251ddf8d4!2sCobtree+Road,+Coxheath,+Maidstone!3m2!1d51.235346299999996!2d0.49386969999999997!4m5!1s0x47df3116f5e359ab:0xf242cd29f1b631ed!2sHanover+Road,+Coxheath,+Maidstone!3m2!1d51.2343903!2d0.4931816!5e0!3m2!1sen!2suk!4v1663778278203!5m2!1sen!2suk",
+          "https://www.google.com/maps/embed?pb=!1m70!1m12!1m3!1d19980.37509705827!2d0.4946782290893679!3d51.24583930825895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m55!3e0!4m5!1s0x47df3116f5e359ab:0xf242cd29f1b631ed!2sHanover+Rd,+Coxheath,+Maidstone!3m2!1d51.2343903!2d0.4931816!4m3!3m2!1d51.2340206!2d0.4950232!4m5!1s0x47df31766aa9d145:0xf7121b3a479556d!2sHeath+Road,+Maidstone!3m2!1d51.230037499999995!2d0.5111287!4m5!1s0x47df31a0d9c84121:0x43f4da91711bf2ec!2sLinton+Road,+Maidstone!3m2!1d51.236527099999996!2d0.5166277!4m5!1s0x47df31a1b8cd3611:0x221ccc66fe994e6a!2sOld+Loose+Hill,+Maidstone!3m2!1d51.239905199999995!2d0.516934!4m3!3m2!1d51.2458964!2d0.5242304!4m5!1s0x47df319be6db24e5:0x12f87c767660deb5!2sLancet+Lane,+Maidstone!3m2!1d51.2465903!2d0.5208714!4m5!1s0x47df319bacad9039:0xbf8e097b5f1225cb!2sAnglesey+Avenue,+Maidstone!3m2!1d51.248588399999996!2d0.5222336!4m3!3m2!1d51.2506335!2d0.5230646!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+Kings+Row,+Armstrong+Road,+Maidstone!3m2!1d51.260791999999995!2d0.5269389999999999!5e0!3m2!1sen!2suk!4v1663778522579!5m2!1sen!2suk"
+        ],
+        "roadPathVerified": false
+      }
+    },
+    {
+      "id": "maidstone-04",
+      "number": 4,
+      "centreId": "maidstone",
+      "title": "Park Way & Bearsted",
+      "summary": "Connect town roads with the Bearsted area.",
+      "roads": [
+        "Park Way",
+        "Bearsted Road",
+        "Provender Way"
+      ],
+      "skills": [
+        "Roundabouts",
+        "Traffic lights"
+      ],
+      "source": {
+        "url": "https://maidstonetestroutes.com/park-way-bearsted-road-provender-way-test-route-4/",
+        "publisher": "Maidstone Test Routes",
+        "accessedAt": "2026-10-26"
+      },
+      "status": "source-linked",
+      "lastVerifiedAt": null,
+      "geometry": null,
+      "skillsStatus": "suggested-practice-focus",
+      "navigation": {
+        "kind": "source-waypoint-plan",
+        "waypoints": [
+          {
+            "lat": 51.260792,
+            "lon": 0.526939,
+            "label": "DVSA Driving Test Centre, 2 Armstrong Rd, Maidstone ME15 6AZ",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2704488,
+            "lon": 0.5328943,
+            "label": "Mote Avenue, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.272251,
+            "lon": 0.5319553,
+            "label": "Square Hill Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2761893,
+            "lon": 0.5267176,
+            "label": "Union Street, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2822141,
+            "lon": 0.5321465,
+            "label": "Park Ave, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2827573,
+            "lon": 0.55267,
+            "label": "Bearsted Rd, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2753702,
+            "lon": 0.5512905,
+            "label": "Provender Way, Weavering, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.272251,
+            "lon": 0.5319553,
+            "label": "Square Hill Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2647088,
+            "lon": 0.5260097,
+            "label": "Sheal's Crescent, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.260792,
+            "lon": 0.526939,
+            "label": "DVSA Driving Test Centre, Kings Row, Armstrong Road, Maidstone",
+            "sourceMap": 1
+          }
+        ],
+        "sourceMaps": [
+          "https://www.google.com/maps/embed?pb=!1m76!1m12!1m3!1d19968.50424698307!2d0.5208130791455097!3d51.273158842574624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e0!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+2+Armstrong+Rd,+Maidstone+ME15+6AZ!3m2!1d51.260791999999995!2d0.5269389999999999!4m5!1s0x47df3223707f04db:0xbaa34032923da832!2sMote+Avenue,+Maidstone!3m2!1d51.2704488!2d0.5328942999999999!4m5!1s0x47df322355c08fd5:0xc52d054240fedee1!2sSquare+Hill+Road,+Maidstone!3m2!1d51.272251!2d0.5319553!4m5!1s0x47df323a70c0e599:0x18f30385da53dcf2!2sUnion+Street,+Maidstone!3m2!1d51.2761893!2d0.5267176!4m5!1s0x47df323f63bc7901:0xf86168ffc72d5a86!2sPark+Ave,+Maidstone!3m2!1d51.2822141!2d0.5321465!4m5!1s0x47df3272d685b5ad:0xe13b418e2668be1d!2sBearsted+Rd,+Maidstone!3m2!1d51.2827573!2d0.55267!4m5!1s0x47df320e51b720b1:0x25668e36cb94063c!2sProvender+Way,+Weavering,+Maidstone!3m2!1d51.2753702!2d0.5512905!4m5!1s0x47df322355c08fd5:0xc52d054240fedee1!2sSquare+Hill+Road,+Maidstone!3m2!1d51.272251!2d0.5319553!4m5!1s0x47df32288103e65d:0xd654b1d1d872640d!2sSheal's+Crescent,+Maidstone!3m2!1d51.2647088!2d0.5260097!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+Kings+Row,+Armstrong+Road,+Maidstone!3m2!1d51.260791999999995!2d0.5269389999999999!5e0!3m2!1sen!2suk!4v1664969191274!5m2!1sen!2suk"
+        ],
+        "roadPathVerified": false
+      }
+    },
+    {
+      "id": "maidstone-05",
+      "number": 5,
+      "centreId": "maidstone",
+      "title": "Vicarage & King George",
+      "summary": "Build familiarity with another Maidstone road corridor.",
+      "roads": [
+        "Vicarage Lane",
+        "King George Road",
+        "Upper Stone Street"
+      ],
+      "skills": [
+        "Junctions",
+        "Observation"
+      ],
+      "source": {
+        "url": "https://maidstonetestroutes.com/vicarage-lane-king-george-road-upper-stone-street-test-route-5/",
+        "publisher": "Maidstone Test Routes",
+        "accessedAt": "2026-10-26"
+      },
+      "status": "source-linked",
+      "lastVerifiedAt": null,
+      "geometry": null,
+      "skillsStatus": "suggested-practice-focus",
+      "navigation": {
+        "kind": "source-waypoint-plan",
+        "waypoints": [
+          {
+            "lat": 51.260792,
+            "lon": 0.526939,
+            "label": "DVSA Driving Test Centre, 2 Armstrong Rd, Maidstone ME15 6AZ",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2625347,
+            "lon": 0.5192982,
+            "label": "Courtenay Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.261648,
+            "lon": 0.5199718,
+            "label": "Forest Hill, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2624756,
+            "lon": 0.5235696,
+            "label": "Postley Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2516357,
+            "lon": 0.4849755,
+            "label": "Source map 1 \u00b7 point 5",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2508584,
+            "lon": 0.4920192,
+            "label": "Forge Ln, East Farleigh, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2506642,
+            "lon": 0.4997029,
+            "label": "Dean Street, East Farleigh, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2659069,
+            "lon": 0.5206271,
+            "label": "King Edward Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2624756,
+            "lon": 0.5235696,
+            "label": "Postley Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.260792,
+            "lon": 0.526939,
+            "label": "DVSA Driving Test Centre, Kings Row, Armstrong Road, Maidstone",
+            "sourceMap": 1
+          }
+        ],
+        "sourceMaps": [
+          "https://www.google.com/maps/embed?pb=!1m74!1m12!1m3!1d19974.55192109306!2d0.4882486625488897!3d51.25924205172393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m59!3e0!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+2+Armstrong+Rd,+Maidstone+ME15+6AZ!3m2!1d51.260791999999995!2d0.5269389999999999!4m5!1s0x47df322a1acbb4e5:0xa9127633dc7609e2!2sCourtenay+Road,+Maidstone!3m2!1d51.262534699999996!2d0.5192981999999999!4m5!1s0x47df3180ad02b71f:0x58201c2f05f66dd9!2sForest+Hill,+Maidstone!3m2!1d51.261648!2d0.5199718!4m5!1s0x47df31878e756ffb:0xdcccc57801969743!2sPostley+Road,+Maidstone!3m2!1d51.262475599999995!2d0.5235696!4m3!3m2!1d51.251635699999994!2d0.4849755!4m5!1s0x47df31686b3530fd:0x423621be5e230477!2sForge+Ln,+East+Farleigh,+Maidstone!3m2!1d51.2508584!2d0.4920192!4m5!1s0x47df31695af2acc1:0x6603e1b11c581685!2sDean+Street,+East+Farleigh,+Maidstone!3m2!1d51.250664199999996!2d0.49970289999999995!4m5!1s0x47df322969a9f9cd:0xdefb1f066cb6aa49!2sKing+Edward+Road,+Maidstone!3m2!1d51.2659069!2d0.5206271!4m5!1s0x47df31878e756ffb:0xdcccc57801969743!2sPostley+Road,+Maidstone!3m2!1d51.262475599999995!2d0.5235696!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+Kings+Row,+Armstrong+Road,+Maidstone!3m2!1d51.260791999999995!2d0.5269389999999999!5e0!3m2!1sen!2suk!4v1665062388998!5m2!1sen!2suk"
+        ],
+        "roadPathVerified": false
+      }
+    },
+    {
+      "id": "maidstone-06",
+      "number": 6,
+      "centreId": "maidstone",
+      "title": "Plains Avenue & Plough Went",
+      "summary": "Explore the Plains Avenue neighbourhood.",
+      "roads": [
+        "Plains Avenue",
+        "Middlesex Road",
+        "Plough Went Road"
+      ],
+      "skills": [
+        "Junctions",
+        "Meeting traffic"
+      ],
+      "source": {
+        "url": "https://maidstonetestroutes.com/plains-avenue-middlesex-road-plough-went-road-test-route-6/",
+        "publisher": "Maidstone Test Routes",
+        "accessedAt": "2026-10-26"
+      },
+      "status": "source-linked",
+      "lastVerifiedAt": null,
+      "geometry": null,
+      "skillsStatus": "suggested-practice-focus",
+      "navigation": {
+        "kind": "source-waypoint-plan",
+        "waypoints": [
+          {
+            "lat": 51.260792,
+            "lon": 0.526939,
+            "label": "DVSA Driving Test Centre, 2 Armstrong Rd, Maidstone ME15 6AZ",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2573593,
+            "lon": 0.5333501,
+            "label": "Source map 1 \u00b7 point 2",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2492257,
+            "lon": 0.5465786,
+            "label": "Middlesex Rd, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2409566,
+            "lon": 0.553373,
+            "label": "Source map 1 \u00b7 point 4",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2426448,
+            "lon": 0.5598306,
+            "label": "Sutton Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.260792,
+            "lon": 0.526939,
+            "label": "DVSA Driving Test Centre, Kings Row, Armstrong Road, Maidstone",
+            "sourceMap": 1
+          }
+        ],
+        "sourceMaps": [
+          "https://www.google.com/maps/embed?pb=!1m48!1m12!1m3!1d19979.008485277358!2d0.5254755290958442!3d51.24898495645326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m33!3e0!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+2+Armstrong+Rd,+Maidstone+ME15+6AZ!3m2!1d51.260791999999995!2d0.5269389999999999!4m3!3m2!1d51.2573593!2d0.5333500999999999!4m5!1s0x47df31efaf8bee09:0x737db90b5770b1b4!2sMiddlesex+Rd,+Maidstone!3m2!1d51.2492257!2d0.5465786!4m3!3m2!1d51.2409566!2d0.553373!4m5!1s0x47df31e0309e23e9:0x8f17a1d57d5e2238!2sSutton+Road,+Maidstone!3m2!1d51.2426448!2d0.5598306!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+Kings+Row,+Armstrong+Road,+Maidstone!3m2!1d51.260791999999995!2d0.5269389999999999!5e0!3m2!1sen!2suk!4v1665076883087!5m2!1sen!2suk"
+        ],
+        "roadPathVerified": false
+      }
+    },
+    {
+      "id": "maidstone-07",
+      "number": 7,
+      "centreId": "maidstone",
+      "title": "Royal Engineers & Sandling",
+      "summary": "Prepare for the roads around north Maidstone.",
+      "roads": [
+        "Royal Engineers Road",
+        "Sandling Lane"
+      ],
+      "skills": [
+        "Roundabouts",
+        "Lane planning"
+      ],
+      "source": {
+        "url": "https://maidstonetestroutes.com/royal-engineers-road-sandling-lane-test-route-7/",
+        "publisher": "Maidstone Test Routes",
+        "accessedAt": "2026-10-26"
+      },
+      "status": "source-linked",
+      "lastVerifiedAt": null,
+      "geometry": null,
+      "skillsStatus": "suggested-practice-focus",
+      "navigation": {
+        "kind": "source-waypoint-plan",
+        "waypoints": [
+          {
+            "lat": 51.260792,
+            "lon": 0.526939,
+            "label": "DVSA Driving Test Centre, 2 Armstrong Rd, Maidstone ME15 6AZ",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2634072,
+            "lon": 0.5203911,
+            "label": "Brenchley Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2659069,
+            "lon": 0.5206271,
+            "label": "King Edward Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2868244,
+            "lon": 0.5178014,
+            "label": "Royal Engineers' Rd, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2920768,
+            "lon": 0.524119,
+            "label": "Sandling Ln, Penenden Heath, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2602342,
+            "lon": 0.5388591,
+            "label": "S Park Rd, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.260792,
+            "lon": 0.526939,
+            "label": "DVSA Driving Test Centre, Kings Row, Armstrong Road, Maidstone",
+            "sourceMap": 1
+          }
+        ],
+        "sourceMaps": [
+          "https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d39933.0557099798!2d0.4928227699746782!3d51.27770628996341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e0!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+2+Armstrong+Rd,+Maidstone+ME15+6AZ!3m2!1d51.260791999999995!2d0.5269389999999999!4m5!1s0x47df32298b7ae9db:0xdf2bfdcb512b3d10!2sBrenchley+Road,+Maidstone!3m2!1d51.263407199999996!2d0.5203911!4m5!1s0x47df322969a9f9cd:0xdefb1f066cb6aa49!2sKing+Edward+Road,+Maidstone!3m2!1d51.2659069!2d0.5206271!4m5!1s0x47df324b0b680a49:0xa815e1ce0deafccb!2sRoyal+Engineers'+Rd,+Maidstone!3m2!1d51.2868244!2d0.5178014!4m5!1s0x47df324fe915cf8d:0xf222b33f45b5dcf0!2sSandling+Ln,+Penenden+Heath,+Maidstone!3m2!1d51.2920768!2d0.524119!4m5!1s0x47df31f530f31345:0xb4e96c7b33ba39dc!2sS+Park+Rd,+Maidstone!3m2!1d51.2602342!2d0.5388590999999999!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+Kings+Row,+Armstrong+Road,+Maidstone!3m2!1d51.260791999999995!2d0.5269389999999999!5e0!3m2!1sen!2suk!4v1665079071468!5m2!1sen!2suk"
+        ],
+        "roadPathVerified": false
+      }
+    },
+    {
+      "id": "maidstone-08",
+      "number": 8,
+      "centreId": "maidstone",
+      "title": "Madginford & Hog Hill",
+      "summary": "Get to know the Madginford road corridor.",
+      "roads": [
+        "Madginford Road",
+        "Hog Hill",
+        "Commodore Road"
+      ],
+      "skills": [
+        "Observation",
+        "Meeting traffic"
+      ],
+      "source": {
+        "url": "https://maidstonetestroutes.com/madginford-road-hog-hill-commodore-road-test-route-8/",
+        "publisher": "Maidstone Test Routes",
+        "accessedAt": "2026-10-26"
+      },
+      "status": "source-linked",
+      "lastVerifiedAt": null,
+      "geometry": null,
+      "skillsStatus": "suggested-practice-focus",
+      "navigation": {
+        "kind": "source-waypoint-plan",
+        "waypoints": [
+          {
+            "lat": 51.260792,
+            "lon": 0.526939,
+            "label": "DVSA Driving Test Centre, 2 Armstrong Rd, Maidstone ME15 6AZ",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2573195,
+            "lon": 0.5340202,
+            "label": "Cranborne Ave, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2658082,
+            "lon": 0.5635586,
+            "label": "Madginford Road, Bearsted, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2748524,
+            "lon": 0.5748194,
+            "label": "Hog Hill, Bearsted, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2776931,
+            "lon": 0.5399314,
+            "label": "Alkham Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.272251,
+            "lon": 0.5319553,
+            "label": "Square Hill Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2704488,
+            "lon": 0.5328943,
+            "label": "Mote Avenue, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2686027,
+            "lon": 0.5343299,
+            "label": "Willow Way, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.260792,
+            "lon": 0.526939,
+            "label": "DVSA Driving Test Centre, Kings Row, Armstrong Road, Maidstone",
+            "sourceMap": 1
+          }
+        ],
+        "sourceMaps": [
+          "https://www.google.com/maps/embed?pb=!1m70!1m12!1m3!1d19969.40535862042!2d0.5334139791412668!3d51.27108539376517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m55!3e0!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+2+Armstrong+Rd,+Maidstone+ME15+6AZ!3m2!1d51.260791999999995!2d0.5269389999999999!4m5!1s0x47df318ba1044a63:0x330d81d32f32bcf5!2sCranborne+Ave,+Maidstone!3m2!1d51.257319499999994!2d0.5340202!4m5!1s0x47df2dff22da0d31:0xc6289c4926ba5111!2sMadginford+Road,+Bearsted,+Maidstone!3m2!1d51.265808199999995!2d0.5635586!4m5!1s0x47df2dee35ad1c05:0xe07805051f601a02!2sHog+Hill,+Bearsted,+Maidstone!3m2!1d51.2748524!2d0.5748194!4m5!1s0x47df3215dff45149:0x79c31683b1320734!2sAlkham+Road,+Maidstone!3m2!1d51.2776931!2d0.5399314!4m5!1s0x47df322355c08fd5:0xc52d054240fedee1!2sSquare+Hill+Road,+Maidstone!3m2!1d51.272251!2d0.5319553!4m5!1s0x47df3223707f04db:0xbaa34032923da832!2sMote+Avenue,+Maidstone!3m2!1d51.2704488!2d0.5328942999999999!4m5!1s0x47df3223b593e969:0x6bbaa03cc5f90365!2sWillow+Way,+Maidstone!3m2!1d51.268602699999995!2d0.5343299!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+Kings+Row,+Armstrong+Road,+Maidstone!3m2!1d51.260791999999995!2d0.5269389999999999!5e0!3m2!1sen!2suk!4v1665502091394!5m2!1sen!2suk"
+        ],
+        "roadPathVerified": false
+      }
+    },
+    {
+      "id": "maidstone-09",
+      "number": 9,
+      "centreId": "maidstone",
+      "title": "Pendenden Heath & Fairmeadow",
+      "summary": "Build confidence across the north and town centre.",
+      "roads": [
+        "Pendenden Heath",
+        "Hardy Street",
+        "Fairmeadow"
+      ],
+      "skills": [
+        "Lane planning",
+        "Traffic lights"
+      ],
+      "source": {
+        "url": "https://maidstonetestroutes.com/pendenden-heath-hardy-street-fairmeadow-test-route-9/",
+        "publisher": "Maidstone Test Routes",
+        "accessedAt": "2026-10-26"
+      },
+      "status": "source-linked",
+      "lastVerifiedAt": null,
+      "geometry": null,
+      "skillsStatus": "suggested-practice-focus",
+      "navigation": {
+        "kind": "source-waypoint-plan",
+        "waypoints": [
+          {
+            "lat": 51.260792,
+            "lon": 0.526939,
+            "label": "DVSA Driving Test Centre, 2 Armstrong Rd, Maidstone ME15 6AZ",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2716728,
+            "lon": 0.5261151,
+            "label": "Romney Pl, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2774756,
+            "lon": 0.5350085,
+            "label": "Claremont Rd, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2776931,
+            "lon": 0.5399314,
+            "label": "Alkham Rd, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2871411,
+            "lon": 0.5388724,
+            "label": "Penenden Heath Rd, Penenden Heath, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2812884,
+            "lon": 0.5241295,
+            "label": "Hardy St, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.273178,
+            "lon": 0.5212032,
+            "label": "High St, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2624756,
+            "lon": 0.5235696,
+            "label": "Postley Road, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.260792,
+            "lon": 0.526939,
+            "label": "DVSA Driving Test Centre, Kings Row, Armstrong Road, Maidstone",
+            "sourceMap": 1
+          }
+        ],
+        "sourceMaps": [
+          "https://www.google.com/maps/embed?pb=!1m70!1m12!1m3!1d19967.84768738641!2d0.512233329148626!3d51.27466954170716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m55!3e0!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+2+Armstrong+Rd,+Maidstone+ME15+6AZ!3m2!1d51.260791999999995!2d0.5269389999999999!4m5!1s0x47df322558917c53:0x4eb85344fb07bb1!2sRomney+Pl,+Maidstone!3m2!1d51.2716728!2d0.5261151!4m5!1s0x47df323c28351405:0xcf745b56d50c753a!2sClaremont+Rd,+Maidstone!3m2!1d51.277475599999995!2d0.5350085!4m5!1s0x47df3215dff45149:0x79c31683b1320734!2sAlkham+Rd,+Maidstone!3m2!1d51.2776931!2d0.5399314!4m5!1s0x47df326a13cb7bc1:0x83d682a455476a8!2sPenenden+Heath+Rd,+Penenden+Heath,+Maidstone!3m2!1d51.2871411!2d0.5388724!4m5!1s0x47df3237c7554cdb:0x12331506b856c70c!2sHardy+St,+Maidstone!3m2!1d51.2812884!2d0.5241295!4m5!1s0x47df3231c23fd635:0xb8a3f6e347e2e0f3!2sHigh+St,+Maidstone!3m2!1d51.273177999999994!2d0.5212032!4m5!1s0x47df31878e756ffb:0xdcccc57801969743!2sPostley+Road,+Maidstone!3m2!1d51.262475599999995!2d0.5235696!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+Kings+Row,+Armstrong+Road,+Maidstone!3m2!1d51.260791999999995!2d0.5269389999999999!5e0!3m2!1sen!2suk!4v1665501230552!5m2!1sen!2suk"
+        ],
+        "roadPathVerified": false
+      }
+    },
+    {
+      "id": "maidstone-10",
+      "number": 10,
+      "centreId": "maidstone",
+      "title": "Anglesey & Dean Street",
+      "summary": "A practice focus around the south-western roads.",
+      "roads": [
+        "Anglesey Avenue",
+        "Lancet Lane",
+        "Dean Street"
+      ],
+      "skills": [
+        "Junctions",
+        "Observation"
+      ],
+      "source": {
+        "url": "https://maidstonetestroutes.com/anglesey-avenue-lancet-lane-dean-street-test-route-10/",
+        "publisher": "Maidstone Test Routes",
+        "accessedAt": "2026-10-26"
+      },
+      "status": "source-linked",
+      "lastVerifiedAt": null,
+      "geometry": null,
+      "skillsStatus": "suggested-practice-focus",
+      "navigation": {
+        "kind": "source-waypoint-plan",
+        "waypoints": [
+          {
+            "lat": 51.260792,
+            "lon": 0.526939,
+            "label": "DVSA Driving Test Centre, 2 Armstrong Rd, Maidstone ME15 6AZ",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2485884,
+            "lon": 0.5222336,
+            "label": "Anglesey Avenue, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2465903,
+            "lon": 0.5208714,
+            "label": "Lancet Lane, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.2506642,
+            "lon": 0.4997029,
+            "label": "Dean Street, East Farleigh, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.261648,
+            "lon": 0.5199718,
+            "label": "Forest Hill, Maidstone",
+            "sourceMap": 1
+          },
+          {
+            "lat": 51.260792,
+            "lon": 0.526939,
+            "label": "DVSA Driving Test Centre, Kings Row, Armstrong Road, Maidstone",
+            "sourceMap": 1
+          }
+        ],
+        "sourceMaps": [
+          "https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d19978.07198267668!2d0.49781397910027186!3d51.25114050521589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e0!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+2+Armstrong+Rd,+Maidstone+ME15+6AZ!3m2!1d51.260791999999995!2d0.5269389999999999!4m5!1s0x47df319bacad9039:0xbf8e097b5f1225cb!2sAnglesey+Avenue,+Maidstone!3m2!1d51.248588399999996!2d0.5222336!4m5!1s0x47df319be6db24e5:0x12f87c767660deb5!2sLancet+Lane,+Maidstone!3m2!1d51.2465903!2d0.5208714!4m5!1s0x47df31695af2acc1:0x6603e1b11c581685!2sDean+Street,+East+Farleigh,+Maidstone!3m2!1d51.250664199999996!2d0.49970289999999995!4m5!1s0x47df3180ad02b71f:0x58201c2f05f66dd9!2sForest+Hill,+Maidstone!3m2!1d51.261648!2d0.5199718!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+Kings+Row,+Armstrong+Road,+Maidstone!3m2!1d51.260791999999995!2d0.5269389999999999!5e0!3m2!1sen!2suk!4v1665503532640!5m2!1sen!2suk"
+        ],
+        "roadPathVerified": false
+      }
+    },
+    {
+      "id": "crawley-01",
+      "number": 1,
+      "centreId": "crawley",
+      "title": "Gossops Green & Southgate",
+      "summary": "A historical road plan through Gossops Green and Southgate.",
+      "roads": [
+        "Gossops Drive",
+        "Dower Walk",
+        "Buckswood Drive",
+        "Southgate Avenue"
+      ],
+      "skills": [
+        "Roundabouts",
+        "Meeting traffic"
+      ],
+      "source": {
+        "url": "https://www.learnerdriveruk.com/driving-test-centres/driving-test-routes/crawley/",
+        "publisher": "Learner Driver UK",
+        "accessedAt": "2026-10-26"
+      },
+      "status": "source-linked",
+      "lastVerifiedAt": null,
+      "geometry": null,
+      "skillsStatus": "suggested-practice-focus",
+      "navigation": {
+        "kind": "source-road-plan",
+        "locations": [
+          "Crawley Driving Test Centre, The Pavilions, Brighton Road, Pease Pottage, RH11 9BJ",
+          "Brighton Road, Crawley, West Sussex",
+          "Crawley Avenue, Crawley, West Sussex",
+          "Gossops Drive, Crawley, West Sussex",
+          "Dower Walk, Crawley, West Sussex",
+          "Oatlands, Crawley, West Sussex",
+          "Dower Walk, Crawley, West Sussex",
+          "Buckswood Drive, Crawley, West Sussex",
+          "Gossops Drive, Crawley, West Sussex",
+          "Rother Crescent, Crawley, West Sussex",
+          "Gossops Drive, Crawley, West Sussex",
+          "Crawley Avenue, Crawley, West Sussex",
+          "Horsham Road, Crawley, West Sussex",
+          "Downland Drive, Crawley, West Sussex",
+          "Clayton Hill, Crawley, West Sussex",
+          "Chanctonbury Way, Crawley, West Sussex",
+          "Brighton Road, Crawley, West Sussex",
+          "Southgate Road, Crawley, West Sussex",
+          "Malthouse Road, Crawley, West Sussex",
+          "Brewer Road, Crawley, West Sussex",
+          "Southgate Drive, Crawley, West Sussex",
+          "Southgate Avenue, Crawley, West Sussex",
+          "Brighton Road, Crawley, West Sussex",
+          "Crawley Driving Test Centre, The Pavilions, Brighton Road, Pease Pottage, RH11 9BJ"
+        ],
+        "sourceMaps": [],
+        "roadPathVerified": false
+      },
+      "startLocationStatus": "unverified-source-start"
+    },
+    {
+      "id": "crawley-02",
+      "number": 2,
+      "centreId": "crawley",
+      "title": "Tilgate & Furnace Green",
+      "summary": "Explore a published road sequence around Tilgate and Furnace Green.",
+      "roads": [
+        "Tilgate Way",
+        "Weald Drive",
+        "Furnace Drive",
+        "Hawth Avenue"
+      ],
+      "skills": [
+        "Junctions",
+        "Traffic lights"
+      ],
+      "source": {
+        "url": "https://www.learnerdriveruk.com/driving-test-centres/driving-test-routes/crawley/",
+        "publisher": "Learner Driver UK",
+        "accessedAt": "2026-10-26"
+      },
+      "status": "source-linked",
+      "lastVerifiedAt": null,
+      "geometry": null,
+      "skillsStatus": "suggested-practice-focus",
+      "navigation": {
+        "kind": "source-road-plan",
+        "locations": [
+          "Crawley Driving Test Centre, The Pavilions, Brighton Road, Pease Pottage, RH11 9BJ",
+          "Brighton Road, Crawley, West Sussex",
+          "Southgate Avenue, Crawley, West Sussex",
+          "Tilgate Way, Crawley, West Sussex",
+          "Ashdown Drive, Crawley, West Sussex",
+          "Weald Drive, Crawley, West Sussex",
+          "Loppets Road, Crawley, West Sussex",
+          "Shackleton Road, Crawley, West Sussex",
+          "Loppets Road, Crawley, West Sussex",
+          "Furnace Drive, Crawley, West Sussex",
+          "Sylvan Road, Crawley, West Sussex",
+          "Newmarket Road, Crawley, West Sussex",
+          "Furnace Drive, Crawley, West Sussex",
+          "The Glade, Crawley, West Sussex",
+          "Weald Drive, Crawley, West Sussex",
+          "Hawth Avenue, Crawley, West Sussex",
+          "Haslett Avenue East, Crawley, West Sussex",
+          "College Road, Crawley, West Sussex",
+          "Exchange Road, Crawley, West Sussex",
+          "Kilnmead, Crawley, West Sussex",
+          "High Street, Crawley, West Sussex",
+          "Ifield Avenue, Crawley, West Sussex",
+          "Crawley Avenue, Crawley, West Sussex",
+          "Brighton Road, Crawley, West Sussex",
+          "Crawley Driving Test Centre, The Pavilions, Brighton Road, Pease Pottage, RH11 9BJ"
+        ],
+        "sourceMaps": [],
+        "roadPathVerified": false
+      },
+      "startLocationStatus": "unverified-source-start"
+    },
+    {
+      "id": "chelmsford-03",
+      "number": 3,
+      "centreId": "chelmsford",
+      "title": "Springfield & Broomfield \u2014 historical",
+      "summary": "Road highlights from a published route starting at the former Hoffmanns Way site.",
+      "roads": [
+        "Springfield Road",
+        "Pump Lane",
+        "Essex Regiment Way",
+        "Broomfield Road"
+      ],
+      "skills": [
+        "Roundabouts",
+        "Observation"
+      ],
+      "source": {
+        "url": "https://www.driving-test-centre.com/chelmsford-driving-test-routes.php",
+        "publisher": "Driving Test Centre",
+        "accessedAt": "2026-10-26"
+      },
+      "status": "historical-reference",
+      "lastVerifiedAt": null,
+      "geometry": null,
+      "skillsStatus": "suggested-practice-focus",
+      "navigation": null,
+      "startLocationStatus": "obsolete-source-start"
+    },
+    {
+      "id": "chelmsford-04",
+      "number": 4,
+      "centreId": "chelmsford",
+      "title": "Melbourne & north Chelmsford \u2014 historical",
+      "summary": "A second historical reference for learning the area, not a current-centre navigation plan.",
+      "roads": [
+        "Broomfield Road",
+        "Corporation Road",
+        "Patching Hall Lane",
+        "School Lane"
+      ],
+      "skills": [
+        "Junctions",
+        "Lane planning"
+      ],
+      "source": {
+        "url": "https://www.driving-test-centre.com/chelmsford-driving-test-routes.php",
+        "publisher": "Driving Test Centre",
+        "accessedAt": "2026-10-26"
+      },
+      "status": "historical-reference",
+      "lastVerifiedAt": null,
+      "geometry": null,
+      "skillsStatus": "suggested-practice-focus",
+      "navigation": null,
+      "startLocationStatus": "obsolete-source-start"
+    }
+  ]
+}
