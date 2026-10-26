@@ -38,3 +38,20 @@ On Android Chrome and iPhone Safari:
 - Verify compatible navigation applications on actual devices. No external app is guaranteed to follow sparse waypoints exactly.
 
 The existing contribution form remains accessible through About & route data, but has been removed from primary navigation during the pilot.
+
+## Scenario preparation and reflection
+
+Driving scenarios now contain three steps: prepare together, choose a practice opportunity, and reflect after parking. The original scenario IDs and reviewed preparation flags are retained. There are two unverified Maidstone places and six general skill exercises.
+
+Search and filters distinguish local places, preparation still to review, and skills marked Working on. Checklists, self-reported practice status and notes save explicitly and are included in progress export/import. Closing a scenario without saving discards edits. Checking all preparation items marks preparation reviewed; it never marks a skill mastered or a route verified. Existing detailed records take precedence over legacy review flags when importing.
+
+Suggested routes match skill tags within the selected centre and require navigation data. They do not establish that a route visits a particular junction. Selecting a route and choosing Save preparation & plan a drive opens a dated plan with the scenario focus prefilled. Saving preparation does not save the plan automatically; cancelling the plan leaves preparation saved.
+
+Additional phone checks:
+
+- Search scenarios, switch each filter, and confirm the empty Local places state outside Maidstone.
+- Save a partial checklist and reflection, reopen it, and verify all fields persist after reload.
+- Complete all preparation items, then uncheck one and save; Preparation to review must include that scenario again.
+- Create a plan from a matched route and confirm its focus matches the chosen scenario.
+- Export/import scenario progress, including an older backup with reviewed flags but no detailed scenario records.
+- Verify dialog scrolling, checkbox labels, keyboard focus and touch targets. Visual browser and native-device QA remain manual checks.
