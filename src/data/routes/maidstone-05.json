@@ -1,0 +1,79 @@
+{
+  "id": "maidstone-05",
+  "number": 5,
+  "centreId": "maidstone",
+  "title": "Vicarage & King George",
+  "summary": "Build familiarity with another Maidstone road corridor.",
+  "roads": [
+    "Vicarage Lane",
+    "King George Road",
+    "Upper Stone Street"
+  ],
+  "skills": [
+    "Junctions",
+    "Observation"
+  ],
+  "status": "unverified",
+  "lastVerifiedAt": null,
+  "geometry": null,
+  "skillsStatus": "suggested-practice-focus",
+  "navigation": {
+    "kind": "waypoint-plan",
+    "waypoints": [
+      {
+        "lat": 51.260792,
+        "lon": 0.526939,
+        "label": "DVSA Driving Test Centre, 2 Armstrong Rd, Maidstone ME15 6AZ"
+      },
+      {
+        "lat": 51.2625347,
+        "lon": 0.5192982,
+        "label": "Courtenay Road, Maidstone"
+      },
+      {
+        "lat": 51.261648,
+        "lon": 0.5199718,
+        "label": "Forest Hill, Maidstone"
+      },
+      {
+        "lat": 51.2624756,
+        "lon": 0.5235696,
+        "label": "Postley Road, Maidstone"
+      },
+      {
+        "lat": 51.2516357,
+        "lon": 0.4849755,
+        "label": "Map 1 · point 5"
+      },
+      {
+        "lat": 51.2508584,
+        "lon": 0.4920192,
+        "label": "Forge Ln, East Farleigh, Maidstone"
+      },
+      {
+        "lat": 51.2506642,
+        "lon": 0.4997029,
+        "label": "Dean Street, East Farleigh, Maidstone"
+      },
+      {
+        "lat": 51.2659069,
+        "lon": 0.5206271,
+        "label": "King Edward Road, Maidstone"
+      },
+      {
+        "lat": 51.2624756,
+        "lon": 0.5235696,
+        "label": "Postley Road, Maidstone"
+      },
+      {
+        "lat": 51.260792,
+        "lon": 0.526939,
+        "label": "DVSA Driving Test Centre, Kings Row, Armstrong Road, Maidstone"
+      }
+    ],
+    "roadPathVerified": false,
+    "maps": [
+      "https://www.google.com/maps/embed?pb=!1m74!1m12!1m3!1d19974.55192109306!2d0.4882486625488897!3d51.25924205172393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m59!3e0!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+2+Armstrong+Rd,+Maidstone+ME15+6AZ!3m2!1d51.260791999999995!2d0.5269389999999999!4m5!1s0x47df322a1acbb4e5:0xa9127633dc7609e2!2sCourtenay+Road,+Maidstone!3m2!1d51.262534699999996!2d0.5192981999999999!4m5!1s0x47df3180ad02b71f:0x58201c2f05f66dd9!2sForest+Hill,+Maidstone!3m2!1d51.261648!2d0.5199718!4m5!1s0x47df31878e756ffb:0xdcccc57801969743!2sPostley+Road,+Maidstone!3m2!1d51.262475599999995!2d0.5235696!4m3!3m2!1d51.251635699999994!2d0.4849755!4m5!1s0x47df31686b3530fd:0x423621be5e230477!2sForge+Ln,+East+Farleigh,+Maidstone!3m2!1d51.2508584!2d0.4920192!4m5!1s0x47df31695af2acc1:0x6603e1b11c581685!2sDean+Street,+East+Farleigh,+Maidstone!3m2!1d51.250664199999996!2d0.49970289999999995!4m5!1s0x47df322969a9f9cd:0xdefb1f066cb6aa49!2sKing+Edward+Road,+Maidstone!3m2!1d51.2659069!2d0.5206271!4m5!1s0x47df31878e756ffb:0xdcccc57801969743!2sPostley+Road,+Maidstone!3m2!1d51.262475599999995!2d0.5235696!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+Kings+Row,+Armstrong+Road,+Maidstone!3m2!1d51.260791999999995!2d0.5269389999999999!5e0!3m2!1sen!2suk!4v1665062388998!5m2!1sen!2suk"
+    ]
+  }
+}

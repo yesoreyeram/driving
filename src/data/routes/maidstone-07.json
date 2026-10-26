@@ -1,0 +1,63 @@
+{
+  "id": "maidstone-07",
+  "number": 7,
+  "centreId": "maidstone",
+  "title": "Royal Engineers & Sandling",
+  "summary": "Prepare for the roads around north Maidstone.",
+  "roads": [
+    "Royal Engineers Road",
+    "Sandling Lane"
+  ],
+  "skills": [
+    "Roundabouts",
+    "Lane planning"
+  ],
+  "status": "unverified",
+  "lastVerifiedAt": null,
+  "geometry": null,
+  "skillsStatus": "suggested-practice-focus",
+  "navigation": {
+    "kind": "waypoint-plan",
+    "waypoints": [
+      {
+        "lat": 51.260792,
+        "lon": 0.526939,
+        "label": "DVSA Driving Test Centre, 2 Armstrong Rd, Maidstone ME15 6AZ"
+      },
+      {
+        "lat": 51.2634072,
+        "lon": 0.5203911,
+        "label": "Brenchley Road, Maidstone"
+      },
+      {
+        "lat": 51.2659069,
+        "lon": 0.5206271,
+        "label": "King Edward Road, Maidstone"
+      },
+      {
+        "lat": 51.2868244,
+        "lon": 0.5178014,
+        "label": "Royal Engineers' Rd, Maidstone"
+      },
+      {
+        "lat": 51.2920768,
+        "lon": 0.524119,
+        "label": "Sandling Ln, Penenden Heath, Maidstone"
+      },
+      {
+        "lat": 51.2602342,
+        "lon": 0.5388591,
+        "label": "S Park Rd, Maidstone"
+      },
+      {
+        "lat": 51.260792,
+        "lon": 0.526939,
+        "label": "DVSA Driving Test Centre, Kings Row, Armstrong Road, Maidstone"
+      }
+    ],
+    "roadPathVerified": false,
+    "maps": [
+      "https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d39933.0557099798!2d0.4928227699746782!3d51.27770628996341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e0!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+2+Armstrong+Rd,+Maidstone+ME15+6AZ!3m2!1d51.260791999999995!2d0.5269389999999999!4m5!1s0x47df32298b7ae9db:0xdf2bfdcb512b3d10!2sBrenchley+Road,+Maidstone!3m2!1d51.263407199999996!2d0.5203911!4m5!1s0x47df322969a9f9cd:0xdefb1f066cb6aa49!2sKing+Edward+Road,+Maidstone!3m2!1d51.2659069!2d0.5206271!4m5!1s0x47df324b0b680a49:0xa815e1ce0deafccb!2sRoyal+Engineers'+Rd,+Maidstone!3m2!1d51.2868244!2d0.5178014!4m5!1s0x47df324fe915cf8d:0xf222b33f45b5dcf0!2sSandling+Ln,+Penenden+Heath,+Maidstone!3m2!1d51.2920768!2d0.524119!4m5!1s0x47df31f530f31345:0xb4e96c7b33ba39dc!2sS+Park+Rd,+Maidstone!3m2!1d51.2602342!2d0.5388590999999999!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+Kings+Row,+Armstrong+Road,+Maidstone!3m2!1d51.260791999999995!2d0.5269389999999999!5e0!3m2!1sen!2suk!4v1665079071468!5m2!1sen!2suk"
+    ]
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "id": "maidstone-02",
+  "number": 2,
+  "centreId": "maidstone",
+  "title": "Longshaw & Bicknor",
+  "summary": "A south-east loop through residential neighbourhoods.",
+  "roads": [
+    "Longshaw Road",
+    "Selby Road",
+    "Bicknor Road"
+  ],
+  "skills": [
+    "Junctions",
+    "Traffic lights"
+  ],
+  "status": "unverified",
+  "lastVerifiedAt": null,
+  "geometry": null,
+  "skillsStatus": "suggested-practice-focus",
+  "navigation": {
+    "kind": "waypoint-plan",
+    "waypoints": [
+      {
+        "lat": 51.260792,
+        "lon": 0.526939,
+        "label": "DVSA Driving Test Centre, 2 Armstrong Rd, Maidstone ME15 6AZ"
+      },
+      {
+        "lat": 51.2615696,
+        "lon": 0.5278605,
+        "label": "Armstrong Road, Maidstone"
+      },
+      {
+        "lat": 51.2578068,
+        "lon": 0.5312055,
+        "label": "Map 1 · point 3"
+      },
+      {
+        "lat": 51.2426448,
+        "lon": 0.5598306,
+        "label": "Sutton Road, Maidstone"
+      },
+      {
+        "lat": 51.2406359,
+        "lon": 0.5552473,
+        "label": "Wallis Avenue, Maidstone"
+      },
+      {
+        "lat": 51.2412252,
+        "lon": 0.5492692,
+        "label": "Map 1 · point 6"
+      },
+      {
+        "lat": 51.2430624,
+        "lon": 0.5505095,
+        "label": "Wrangleden Road, Maidstone"
+      },
+      {
+        "lat": 51.239805,
+        "lon": 0.5568351,
+        "label": "Longshaw Road, Maidstone"
+      },
+      {
+        "lat": 51.2387808,
+        "lon": 0.5579801,
+        "label": "Selby Road, Maidstone"
+      },
+      {
+        "lat": 51.2383009,
+        "lon": 0.5587664,
+        "label": "Bicknor Road, Maidstone"
+      },
+      {
+        "lat": 51.2406359,
+        "lon": 0.5552473,
+        "label": "Wallis Avenue, Maidstone"
+      },
+      {
+        "lat": 51.2362664,
+        "lon": 0.5463034,
+        "label": "Brishing Lane, Maidstone"
+      },
+      {
+        "lat": 51.2282171,
+        "lon": 0.5518491,
+        "label": "Map 2 · point 4"
+      },
+      {
+        "lat": 51.2322336,
+        "lon": 0.5612005,
+        "label": "Map 2 · point 5"
+      },
+      {
+        "lat": 51.2426448,
+        "lon": 0.5598306,
+        "label": "Sutton Road, Maidstone"
+      },
+      {
+        "lat": 51.25925,
+        "lon": 0.5306767,
+        "label": "Map 2 · point 7"
+      },
+      {
+        "lat": 51.2615696,
+        "lon": 0.5278605,
+        "label": "Armstrong Road, Maidstone"
+      },
+      {
+        "lat": 51.260792,
+        "lon": 0.526939,
+        "label": "DVSA Driving Test Centre, Kings Row, Armstrong Road, Maidstone"
+      }
+    ],
+    "roadPathVerified": false,
+    "maps": [
+      "https://www.google.com/maps/embed?pb=!1m72!1m12!1m3!1d19978.566533257923!2d0.5254755290979306!3d51.25000220586932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m57!3e0!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+2+Armstrong+Rd,+Maidstone+ME15+6AZ!3m2!1d51.260791999999995!2d0.5269389999999999!4m5!1s0x47df3188101266a5:0x7b7d5aadbe671d54!2sArmstrong+Road,+Maidstone!3m2!1d51.261569599999994!2d0.5278605!4m3!3m2!1d51.2578068!2d0.5312055!4m5!1s0x47df31e0309e23e9:0x8f17a1d57d5e2238!2sSutton+Road,+Maidstone!3m2!1d51.2426448!2d0.5598306!4m5!1s0x47df31e0c964ef85:0x7d118e26fea28580!2sWallis+Avenue,+Maidstone!3m2!1d51.2406359!2d0.5552473!4m3!3m2!1d51.241225199999995!2d0.5492692!4m5!1s0x47df31e7ea2726ab:0xa7e69a6b72dc8e3d!2sWrangleden+Road,+Maidstone!3m2!1d51.2430624!2d0.5505095!4m5!1s0x47df31de38dd75e5:0x7e40fdd58e2f9bfd!2sLongshaw+Road,+Maidstone!3m2!1d51.239805!2d0.5568351!4m5!1s0x47df31de52f4ce6d:0x4a60ac1b4991704d!2sSelby+Road,+Maidstone!3m2!1d51.2387808!2d0.5579801!4m5!1s0x47df31de54e80703:0xfc61c80f41793f8!2sBicknor+Road,+Maidstone!3m2!1d51.2383009!2d0.5587664!5e0!3m2!1sen!2suk!4v1663761670449!5m2!1sen!2suk",
+      "https://www.google.com/maps/embed?pb=!1m64!1m12!1m3!1d19981.124076338358!2d0.5263900290858347!3d51.244115259248574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m49!3e0!4m5!1s0x47df31de54e80703:0xfc61c80f41793f8!2sBicknor+Road,+Maidstone!3m2!1d51.2383009!2d0.5587664!4m5!1s0x47df31e0c964ef85:0x7d118e26fea28580!2sWallis+Avenue,+Maidstone!3m2!1d51.2406359!2d0.5552473!4m5!1s0x47df31dca8179b69:0x7271b600db2fcced!2sBrishing+Lane,+Maidstone!3m2!1d51.2362664!2d0.5463034!4m3!3m2!1d51.228217099999995!2d0.5518491!4m3!3m2!1d51.2322336!2d0.5612005!4m5!1s0x47df31e0309e23e9:0x8f17a1d57d5e2238!2sSutton+Road,+Maidstone!3m2!1d51.2426448!2d0.5598306!4m3!3m2!1d51.259249999999994!2d0.5306767!4m5!1s0x47df3188101266a5:0x7b7d5aadbe671d54!2sArmstrong+Road,+Maidstone!3m2!1d51.261569599999994!2d0.5278605!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+Kings+Row,+Armstrong+Road,+Maidstone!3m2!1d51.260791999999995!2d0.5269389999999999!5e0!3m2!1sen!2suk!4v1663774371708!5m2!1sen!2suk"
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "maidstone-06",
+  "number": 6,
+  "centreId": "maidstone",
+  "title": "Plains Avenue & Plough Went",
+  "summary": "Explore the Plains Avenue neighbourhood.",
+  "roads": [
+    "Plains Avenue",
+    "Middlesex Road",
+    "Plough Went Road"
+  ],
+  "skills": [
+    "Junctions",
+    "Meeting traffic"
+  ],
+  "status": "unverified",
+  "lastVerifiedAt": null,
+  "geometry": null,
+  "skillsStatus": "suggested-practice-focus",
+  "navigation": {
+    "kind": "waypoint-plan",
+    "waypoints": [
+      {
+        "lat": 51.260792,
+        "lon": 0.526939,
+        "label": "DVSA Driving Test Centre, 2 Armstrong Rd, Maidstone ME15 6AZ"
+      },
+      {
+        "lat": 51.2573593,
+        "lon": 0.5333501,
+        "label": "Map 1 · point 2"
+      },
+      {
+        "lat": 51.2492257,
+        "lon": 0.5465786,
+        "label": "Middlesex Rd, Maidstone"
+      },
+      {
+        "lat": 51.2409566,
+        "lon": 0.553373,
+        "label": "Map 1 · point 4"
+      },
+      {
+        "lat": 51.2426448,
+        "lon": 0.5598306,
+        "label": "Sutton Road, Maidstone"
+      },
+      {
+        "lat": 51.260792,
+        "lon": 0.526939,
+        "label": "DVSA Driving Test Centre, Kings Row, Armstrong Road, Maidstone"
+      }
+    ],
+    "roadPathVerified": false,
+    "maps": [
+      "https://www.google.com/maps/embed?pb=!1m48!1m12!1m3!1d19979.008485277358!2d0.5254755290958442!3d51.24898495645326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m33!3e0!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+2+Armstrong+Rd,+Maidstone+ME15+6AZ!3m2!1d51.260791999999995!2d0.5269389999999999!4m3!3m2!1d51.2573593!2d0.5333500999999999!4m5!1s0x47df31efaf8bee09:0x737db90b5770b1b4!2sMiddlesex+Rd,+Maidstone!3m2!1d51.2492257!2d0.5465786!4m3!3m2!1d51.2409566!2d0.553373!4m5!1s0x47df31e0309e23e9:0x8f17a1d57d5e2238!2sSutton+Road,+Maidstone!3m2!1d51.2426448!2d0.5598306!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+Kings+Row,+Armstrong+Road,+Maidstone!3m2!1d51.260791999999995!2d0.5269389999999999!5e0!3m2!1sen!2suk!4v1665076883087!5m2!1sen!2suk"
+    ]
+  }
+}

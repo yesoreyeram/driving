@@ -1,0 +1,53 @@
+{
+  "id": "crawley-01",
+  "number": 1,
+  "centreId": "crawley",
+  "title": "Gossops Green & Southgate",
+  "summary": "A historical road plan through Gossops Green and Southgate.",
+  "roads": [
+    "Gossops Drive",
+    "Dower Walk",
+    "Buckswood Drive",
+    "Southgate Avenue"
+  ],
+  "skills": [
+    "Roundabouts",
+    "Meeting traffic"
+  ],
+  "status": "unverified",
+  "lastVerifiedAt": null,
+  "geometry": null,
+  "skillsStatus": "suggested-practice-focus",
+  "navigation": {
+    "kind": "road-plan",
+    "locations": [
+      "Crawley Driving Test Centre, The Pavilions, Brighton Road, Pease Pottage, RH11 9BJ",
+      "Brighton Road, Crawley, West Sussex",
+      "Crawley Avenue, Crawley, West Sussex",
+      "Gossops Drive, Crawley, West Sussex",
+      "Dower Walk, Crawley, West Sussex",
+      "Oatlands, Crawley, West Sussex",
+      "Dower Walk, Crawley, West Sussex",
+      "Buckswood Drive, Crawley, West Sussex",
+      "Gossops Drive, Crawley, West Sussex",
+      "Rother Crescent, Crawley, West Sussex",
+      "Gossops Drive, Crawley, West Sussex",
+      "Crawley Avenue, Crawley, West Sussex",
+      "Horsham Road, Crawley, West Sussex",
+      "Downland Drive, Crawley, West Sussex",
+      "Clayton Hill, Crawley, West Sussex",
+      "Chanctonbury Way, Crawley, West Sussex",
+      "Brighton Road, Crawley, West Sussex",
+      "Southgate Road, Crawley, West Sussex",
+      "Malthouse Road, Crawley, West Sussex",
+      "Brewer Road, Crawley, West Sussex",
+      "Southgate Drive, Crawley, West Sussex",
+      "Southgate Avenue, Crawley, West Sussex",
+      "Brighton Road, Crawley, West Sussex",
+      "Crawley Driving Test Centre, The Pavilions, Brighton Road, Pease Pottage, RH11 9BJ"
+    ],
+    "roadPathVerified": false,
+    "maps": []
+  },
+  "startLocationStatus": "unverified-start"
+}

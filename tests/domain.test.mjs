@@ -1,13 +1,14 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {emptyProgress,validateProgress,filterRoutes,summary,contributionUrl,navigationLegs,googleMapsUrl,routeGpx,navigationPoints} from '../dist/domain.mjs';
-const {routes,centres}=JSON.parse(await readFile(new URL('../dist/data/routes.json',import.meta.url)));
+import {emptyProgress,validateProgress,filterRoutes,summary,contributionUrl,navigationLegs,googleMapsUrl,routeGpx,navigationPoints} from '../src/domain.mjs';
+import {loadRegistry} from '../src/registry.mjs';
+const {routes,centres}=await loadRegistry(new URL('../src/data/index.json',import.meta.url),async url=>JSON.parse(await readFile(url,'utf8')));
 const ids=routes.map(r=>r.id);
 const session={id:'test-session',routeId:ids[0],date:'2026-10-20',minutes:35,confidence:3,notes:'Practise observations next time.'};
-test('every route has provenance, a centre and honest verification state',()=>{
+test('every route has a centre and honest verification state',()=>{
  assert.equal(routes.length,14);assert.equal(new Set(ids).size,14);assert.equal(centres.length,3);
- for(const r of routes){assert.ok(centres.some(c=>c.id===r.centreId));assert.ok(['maidstonetestroutes.com','www.learnerdriveruk.com','www.driving-test-centre.com'].includes(new URL(r.source.url).hostname));assert.equal(r.lastVerifiedAt,null);assert.equal(r.geometry,null);if(r.navigation){assert.equal(r.navigation.roadPathVerified,false);assert.ok(navigationPoints(r).length>=2);}else assert.equal(r.status,'historical-reference');}
+ for(const r of routes){assert.ok(centres.some(c=>c.id===r.centreId));assert.equal('source' in r,false);assert.equal(r.lastVerifiedAt,null);assert.equal(r.geometry,null);if(r.navigation){assert.equal(r.navigation.roadPathVerified,false);assert.ok(navigationPoints(r).length>=2);}else assert.equal(r.status,'historical-reference');}
 });
 test('search matches roads and combines skill and bookmark filters',()=>{
  assert.deepEqual(filterRoutes(routes,{query:'Sandling'}).map(r=>r.id),['maidstone-07']);
@@ -35,7 +36,7 @@ test('all Google legs retain point order, overlap boundaries and respect mobile 
  for(let i=0;i<legs.length;i++){const leg=legs[i];assert.ok(leg.length>=2&&leg.length<=5);if(i)assert.deepEqual(legs[i-1].at(-1),leg[0]);const url=googleMapsUrl(leg);assert.ok(url.length<2048);const q=new URL(url).searchParams;assert.equal(q.get('api'),'1');assert.equal(q.get('travelmode'),'driving');assert.equal(q.get('origin'),(leg[0].location || `${leg[0].lat},${leg[0].lon}`));assert.equal(q.get('destination'),(leg.at(-1).location || `${leg.at(-1).lat},${leg.at(-1).lon}`));assert.equal(q.get('waypoints')?.split('|').length||0,leg.length-2);}
  }
 });
-test('single GPX plan retains every ordered source anchor without fabricating a track',()=>{
+test('single GPX plan retains every ordered route anchor without fabricating a track',()=>{
  assert.equal(routes[0].navigation.waypoints.length,27);
  for(const r of routes.filter(r=>r.navigation?.waypoints)){const gpx=routeGpx(r);assert.equal((gpx.match(/<rtept /g)||[]).length,r.navigation.waypoints.length);assert.ok(!gpx.includes('<trkpt'));const coords=[...gpx.matchAll(/<rtept lat="([^"]+)" lon="([^"]+)"/g)].map(m=>({lat:Number(m[1]),lon:Number(m[2])}));assert.deepEqual(coords,r.navigation.waypoints.map(({lat,lon})=>({lat,lon})));assert.deepEqual(coords[0],coords.at(-1));}
  const gpx=routeGpx({...routes[0],title:'A&B <route>'});assert.ok(gpx.includes('A&amp;B &lt;route&gt;'));
@@ -56,8 +57,8 @@ test('road-name plans retain qualified locations but cannot fabricate GPX',()=>{
  for(const r of routes.filter(r=>r.centreId==='crawley')){const points=navigationPoints(r);assert.ok(points.every(p=>p.location.includes('Crawley')));assert.equal(points[0].location,points.at(-1).location);assert.throws(()=>routeGpx(r));}
 });
 test('obsolete Chelmsford starts cannot produce a navigation plan',()=>{
- const c=centres.find(c=>c.id==='chelmsford');assert.equal(c.locationStatus,'current-meeting-point-unconfirmed');assert.ok(c.locationSources.length===2);
- for(const r of routes.filter(r=>r.centreId==='chelmsford')){assert.equal(r.startLocationStatus,'obsolete-source-start');assert.deepEqual(navigationPoints(r),[]);assert.throws(()=>routeGpx(r));}
+ const c=centres.find(c=>c.id==='chelmsford');assert.equal(c.locationStatus,'current-meeting-point-unconfirmed');assert.equal('locationSources' in c,false);
+ for(const r of routes.filter(r=>r.centreId==='chelmsford')){assert.equal(r.startLocationStatus,'obsolete-start');assert.deepEqual(navigationPoints(r),[]);assert.throws(()=>routeGpx(r));}
 });
 test('progress from multiple centres roundtrips without changing existing IDs',()=>{
  const p={...emptyProgress(),bookmarks:['maidstone-01','crawley-01'],sessions:[session,{...session,id:'crawley-session',routeId:'crawley-01'}]};assert.deepEqual(validateProgress(p,ids),p);assert.deepEqual(summary(p),{sessions:2,routes:2,minutes:70});

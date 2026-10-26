@@ -1,0 +1,59 @@
+{
+  "id": "maidstone-10",
+  "number": 10,
+  "centreId": "maidstone",
+  "title": "Anglesey & Dean Street",
+  "summary": "A practice focus around the south-western roads.",
+  "roads": [
+    "Anglesey Avenue",
+    "Lancet Lane",
+    "Dean Street"
+  ],
+  "skills": [
+    "Junctions",
+    "Observation"
+  ],
+  "status": "unverified",
+  "lastVerifiedAt": null,
+  "geometry": null,
+  "skillsStatus": "suggested-practice-focus",
+  "navigation": {
+    "kind": "waypoint-plan",
+    "waypoints": [
+      {
+        "lat": 51.260792,
+        "lon": 0.526939,
+        "label": "DVSA Driving Test Centre, 2 Armstrong Rd, Maidstone ME15 6AZ"
+      },
+      {
+        "lat": 51.2485884,
+        "lon": 0.5222336,
+        "label": "Anglesey Avenue, Maidstone"
+      },
+      {
+        "lat": 51.2465903,
+        "lon": 0.5208714,
+        "label": "Lancet Lane, Maidstone"
+      },
+      {
+        "lat": 51.2506642,
+        "lon": 0.4997029,
+        "label": "Dean Street, East Farleigh, Maidstone"
+      },
+      {
+        "lat": 51.261648,
+        "lon": 0.5199718,
+        "label": "Forest Hill, Maidstone"
+      },
+      {
+        "lat": 51.260792,
+        "lon": 0.526939,
+        "label": "DVSA Driving Test Centre, Kings Row, Armstrong Road, Maidstone"
+      }
+    ],
+    "roadPathVerified": false,
+    "maps": [
+      "https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d19978.07198267668!2d0.49781397910027186!3d51.25114050521589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e0!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+2+Armstrong+Rd,+Maidstone+ME15+6AZ!3m2!1d51.260791999999995!2d0.5269389999999999!4m5!1s0x47df319bacad9039:0xbf8e097b5f1225cb!2sAnglesey+Avenue,+Maidstone!3m2!1d51.248588399999996!2d0.5222336!4m5!1s0x47df319be6db24e5:0x12f87c767660deb5!2sLancet+Lane,+Maidstone!3m2!1d51.2465903!2d0.5208714!4m5!1s0x47df31695af2acc1:0x6603e1b11c581685!2sDean+Street,+East+Farleigh,+Maidstone!3m2!1d51.250664199999996!2d0.49970289999999995!4m5!1s0x47df3180ad02b71f:0x58201c2f05f66dd9!2sForest+Hill,+Maidstone!3m2!1d51.261648!2d0.5199718!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+Kings+Row,+Armstrong+Road,+Maidstone!3m2!1d51.260791999999995!2d0.5269389999999999!5e0!3m2!1sen!2suk!4v1665503532640!5m2!1sen!2suk"
+    ]
+  }
+}

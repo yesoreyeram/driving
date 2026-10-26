@@ -1,0 +1,74 @@
+{
+  "id": "maidstone-08",
+  "number": 8,
+  "centreId": "maidstone",
+  "title": "Madginford & Hog Hill",
+  "summary": "Get to know the Madginford road corridor.",
+  "roads": [
+    "Madginford Road",
+    "Hog Hill",
+    "Commodore Road"
+  ],
+  "skills": [
+    "Observation",
+    "Meeting traffic"
+  ],
+  "status": "unverified",
+  "lastVerifiedAt": null,
+  "geometry": null,
+  "skillsStatus": "suggested-practice-focus",
+  "navigation": {
+    "kind": "waypoint-plan",
+    "waypoints": [
+      {
+        "lat": 51.260792,
+        "lon": 0.526939,
+        "label": "DVSA Driving Test Centre, 2 Armstrong Rd, Maidstone ME15 6AZ"
+      },
+      {
+        "lat": 51.2573195,
+        "lon": 0.5340202,
+        "label": "Cranborne Ave, Maidstone"
+      },
+      {
+        "lat": 51.2658082,
+        "lon": 0.5635586,
+        "label": "Madginford Road, Bearsted, Maidstone"
+      },
+      {
+        "lat": 51.2748524,
+        "lon": 0.5748194,
+        "label": "Hog Hill, Bearsted, Maidstone"
+      },
+      {
+        "lat": 51.2776931,
+        "lon": 0.5399314,
+        "label": "Alkham Road, Maidstone"
+      },
+      {
+        "lat": 51.272251,
+        "lon": 0.5319553,
+        "label": "Square Hill Road, Maidstone"
+      },
+      {
+        "lat": 51.2704488,
+        "lon": 0.5328943,
+        "label": "Mote Avenue, Maidstone"
+      },
+      {
+        "lat": 51.2686027,
+        "lon": 0.5343299,
+        "label": "Willow Way, Maidstone"
+      },
+      {
+        "lat": 51.260792,
+        "lon": 0.526939,
+        "label": "DVSA Driving Test Centre, Kings Row, Armstrong Road, Maidstone"
+      }
+    ],
+    "roadPathVerified": false,
+    "maps": [
+      "https://www.google.com/maps/embed?pb=!1m70!1m12!1m3!1d19969.40535862042!2d0.5334139791412668!3d51.27108539376517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m55!3e0!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+2+Armstrong+Rd,+Maidstone+ME15+6AZ!3m2!1d51.260791999999995!2d0.5269389999999999!4m5!1s0x47df318ba1044a63:0x330d81d32f32bcf5!2sCranborne+Ave,+Maidstone!3m2!1d51.257319499999994!2d0.5340202!4m5!1s0x47df2dff22da0d31:0xc6289c4926ba5111!2sMadginford+Road,+Bearsted,+Maidstone!3m2!1d51.265808199999995!2d0.5635586!4m5!1s0x47df2dee35ad1c05:0xe07805051f601a02!2sHog+Hill,+Bearsted,+Maidstone!3m2!1d51.2748524!2d0.5748194!4m5!1s0x47df3215dff45149:0x79c31683b1320734!2sAlkham+Road,+Maidstone!3m2!1d51.2776931!2d0.5399314!4m5!1s0x47df322355c08fd5:0xc52d054240fedee1!2sSquare+Hill+Road,+Maidstone!3m2!1d51.272251!2d0.5319553!4m5!1s0x47df3223707f04db:0xbaa34032923da832!2sMote+Avenue,+Maidstone!3m2!1d51.2704488!2d0.5328942999999999!4m5!1s0x47df3223b593e969:0x6bbaa03cc5f90365!2sWillow+Way,+Maidstone!3m2!1d51.268602699999995!2d0.5343299!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+Kings+Row,+Armstrong+Road,+Maidstone!3m2!1d51.260791999999995!2d0.5269389999999999!5e0!3m2!1sen!2suk!4v1665502091394!5m2!1sen!2suk"
+    ]
+  }
+}

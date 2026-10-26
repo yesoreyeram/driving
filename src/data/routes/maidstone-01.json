@@ -1,0 +1,166 @@
+{
+  "id": "maidstone-01",
+  "number": 1,
+  "centreId": "maidstone",
+  "title": "St Philips & Kingsley",
+  "summary": "Town streets, mini roundabouts and residential roads.",
+  "roads": [
+    "St Philips Avenue",
+    "Kingsley Street",
+    "Brunswick Road East"
+  ],
+  "skills": [
+    "Roundabouts",
+    "Meeting traffic"
+  ],
+  "status": "unverified",
+  "lastVerifiedAt": null,
+  "geometry": null,
+  "skillsStatus": "suggested-practice-focus",
+  "navigation": {
+    "kind": "waypoint-plan",
+    "waypoints": [
+      {
+        "lat": 51.260792,
+        "lon": 0.526939,
+        "label": "DVSA Driving Test Centre, 2 Armstrong Rd, Maidstone ME15 6AZ"
+      },
+      {
+        "lat": 51.2611002,
+        "lon": 0.5261414,
+        "label": "Map 1 · point 2"
+      },
+      {
+        "lat": 51.262513,
+        "lon": 0.5221777,
+        "label": "Quarry Road, Maidstone"
+      },
+      {
+        "lat": 51.2653579,
+        "lon": 0.5227065,
+        "label": "Map 1 · point 4"
+      },
+      {
+        "lat": 51.2652603,
+        "lon": 0.5222143,
+        "label": "Old Tovil Road, Maidstone"
+      },
+      {
+        "lat": 51.2625347,
+        "lon": 0.5192982,
+        "label": "Courtenay Road, Maidstone"
+      },
+      {
+        "lat": 51.2624756,
+        "lon": 0.5235696,
+        "label": "Postley Road, Maidstone"
+      },
+      {
+        "lat": 51.2670553,
+        "lon": 0.522969,
+        "label": "Hayle Road, Maidstone"
+      },
+      {
+        "lat": 51.2795752,
+        "lon": 0.5203485,
+        "label": "Staceys Street, Maidstone"
+      },
+      {
+        "lat": 51.2803413,
+        "lon": 0.5225123,
+        "label": "Lower Boxley Road, Maidstone"
+      },
+      {
+        "lat": 51.2793607,
+        "lon": 0.5254005,
+        "label": "Well Road, Maidstone"
+      },
+      {
+        "lat": 51.2785766,
+        "lon": 0.526739,
+        "label": "Wheeler Street, Maidstone"
+      },
+      {
+        "lat": 51.2761893,
+        "lon": 0.5267176,
+        "label": "Union Street, Maidstone"
+      },
+      {
+        "lat": 51.2753512,
+        "lon": 0.5271221,
+        "label": "Wyatt Street, Maidstone"
+      },
+      {
+        "lat": 51.2745897,
+        "lon": 0.5267197,
+        "label": "Map 2 · point 6"
+      },
+      {
+        "lat": 51.2738033,
+        "lon": 0.5258412,
+        "label": "Church Street, Maidstone"
+      },
+      {
+        "lat": 51.2737555,
+        "lon": 0.5262849,
+        "label": "King Street, Maidstone"
+      },
+      {
+        "lat": 51.272251,
+        "lon": 0.5319553,
+        "label": "Square Hill Road, Maidstone"
+      },
+      {
+        "lat": 51.2704488,
+        "lon": 0.5328943,
+        "label": "Mote Avenue, Maidstone"
+      },
+      {
+        "lat": 51.2661636,
+        "lon": 0.5319029,
+        "label": "Upper Road, Maidstone"
+      },
+      {
+        "lat": 51.2668572,
+        "lon": 0.5296183,
+        "label": "St Philip's Ave, Maidstone"
+      },
+      {
+        "lat": 51.267474,
+        "lon": 0.5285111,
+        "label": "Waterloo Street, Maidstone"
+      },
+      {
+        "lat": 51.2690603,
+        "lon": 0.5281553,
+        "label": "Kingsley Road, Maidstone"
+      },
+      {
+        "lat": 51.2693698,
+        "lon": 0.5270009,
+        "label": "Brunswick Street East, Maidstone"
+      },
+      {
+        "lat": 51.2647088,
+        "lon": 0.5260097,
+        "label": "Sheal's Crescent, Maidstone"
+      },
+      {
+        "lat": 51.2624756,
+        "lon": 0.5235696,
+        "label": "Postley Road, Maidstone"
+      },
+      {
+        "lat": 51.260792,
+        "lon": 0.526939,
+        "label": "DVSA Driving Test Centre, Kings Row, Armstrong Road, Maidstone"
+      }
+    ],
+    "roadPathVerified": false,
+    "maps": [
+      "https://www.google.com/maps/embed?pb=!1m72!1m12!1m3!1d9984.825981635473!2d0.5125254421447615!3d51.27051794845838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m57!3e0!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+2+Armstrong+Rd,+Maidstone+ME15+6AZ!3m2!1d51.260791999999995!2d0.5269389999999999!4m3!3m2!1d51.261100199999994!2d0.5261414!4m5!1s0x47df3229c423df1b:0xdb65d19063a144ce!2sQuarry+Road,+Maidstone!3m2!1d51.262513!2d0.5221777!4m3!3m2!1d51.2653579!2d0.5227065!4m5!1s0x47df322910f32a33:0xeca2d4f61c6a3732!2sOld+Tovil+Road,+Maidstone!3m2!1d51.265260299999994!2d0.5222143!4m5!1s0x47df322a1acbb4e5:0xa9127633dc7609e2!2sCourtenay+Road,+Maidstone!3m2!1d51.262534699999996!2d0.5192981999999999!4m5!1s0x47df31878e756ffb:0xdcccc57801969743!2sPostley+Road,+Maidstone!3m2!1d51.262475599999995!2d0.5235696!4m5!1s0x47df3228d57862c5:0x4b0e3bb42a5535d6!2sHayle+Road,+Maidstone!3m2!1d51.267055299999996!2d0.522969!4m5!1s0x47df3234287e43bb:0x59d12fa75c445d25!2sStaceys+Street,+Maidstone!3m2!1d51.2795752!2d0.5203485!4m5!1s0x47df323655969fbb:0xd9575dd1c17ae662!2sLower+Boxley+Road,+Maidstone!3m2!1d51.280341299999996!2d0.5225122999999999!5e0!3m2!1sen!2suk!4v1663758943741!5m2!1sen!2suk",
+      "https://www.google.com/maps/embed?pb=!1m66!1m12!1m3!1d4991.755431235009!2d0.5236054779772927!3d51.2765699799513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m51!3e0!4m3!3m2!1d51.280341899999996!2d0.5225131!4m5!1s0x47df323768b3609d:0x446a7c3c68d23ceb!2sWell+Road,+Maidstone!3m2!1d51.2793607!2d0.5254004999999999!4m5!1s0x47df3239932212e7:0xd5faf27f1ac622ab!2sWheeler+Street,+Maidstone!3m2!1d51.2785766!2d0.526739!4m5!1s0x47df323a70c0e599:0x18f30385da53dcf2!2sUnion+Street,+Maidstone!3m2!1d51.2761893!2d0.5267176!4m5!1s0x47df323a634f7b77:0xe1f1ad8058888353!2sWyatt+Street,+Maidstone!3m2!1d51.275351199999996!2d0.5271220999999999!4m3!3m2!1d51.2745897!2d0.5267197!4m5!1s0x47df323060a375a7:0x3e6e17b5cfb59c1e!2sChurch+Street,+Maidstone!3m2!1d51.2738033!2d0.5258412!4m5!1s0x47df323aa24ad1ef:0x6954859345acb1bb!2sKing+Street,+Maidstone!3m2!1d51.2737555!2d0.5262848999999999!4m5!1s0x47df322355c08fd5:0xc52d054240fedee1!2sSquare+Hill+Road,+Maidstone!3m2!1d51.272251!2d0.5319553!5e0!3m2!1sen!2suk!4v1663759279867!5m2!1sen!2suk",
+      "https://www.google.com/maps/embed?pb=!1m76!1m12!1m3!1d9985.704938864674!2d0.5205556421426922!3d51.2664727996299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e0!4m5!1s0x47df322355c08fd5:0xc52d054240fedee1!2sSquare+Hill+Rd,+Maidstone!3m2!1d51.272251!2d0.5319553!4m5!1s0x47df3223707f04db:0xbaa34032923da832!2sMote+Avenue,+Maidstone!3m2!1d51.2704488!2d0.5328942999999999!4m5!1s0x47df32214cb2497b:0x9c6b2b0aa2fbaef5!2sUpper+Road,+Maidstone!3m2!1d51.2661636!2d0.5319029!4m5!1s0x47df32268f87f2ff:0xd8444a48838ee5f2!2sSt+Philip's+Ave,+Maidstone!3m2!1d51.2668572!2d0.5296183!4m5!1s0x47df3225d9ec4ce7:0x26eb4ea02ae13603!2sWaterloo+Street,+Maidstone!3m2!1d51.267474!2d0.5285111!4m5!1s0x47df3225baf0c70b:0xf77923000112e1fe!2sKingsley+Road,+Maidstone!3m2!1d51.2690603!2d0.5281553!4m5!1s0x47df32259a738a77:0x213f416c7666cf81!2sBrunswick+Street+East,+Maidstone!3m2!1d51.2693698!2d0.5270009!4m5!1s0x47df32288103e65d:0xd654b1d1d872640d!2sSheal's+Crescent,+Maidstone!3m2!1d51.2647088!2d0.5260097!4m5!1s0x47df31878e756ffb:0xdcccc57801969743!2sPostley+Road,+Maidstone!3m2!1d51.262475599999995!2d0.5235696!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+Kings+Row,+Armstrong+Road,+Maidstone!3m2!1d51.260791999999995!2d0.5269389999999999!5e0!3m2!1sen!2suk!4v1663759465697!5m2!1sen!2suk"
+    ]
+  }
+}

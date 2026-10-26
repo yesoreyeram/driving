@@ -1,30 +1,59 @@
-# Data contract — version 1
+# Data contract — version 2
 
-`dist/data/routes.json` is a JSON document with `schemaVersion`, `centres` and `routes`.
+## Index graph
+
+`src/data/index.json` is the entry point:
+
+```json
+{
+  "schemaVersion": 2,
+  "centres": [
+    {"id": "maidstone", "path": "./centres/maidstone.json"}
+  ]
+}
+```
+
+Each centre file contains its metadata and an ordered route index:
+
+```json
+{
+  "id": "maidstone",
+  "name": "Maidstone",
+  "county": "Kent",
+  "area": "Kent, South East England",
+  "meetingArea": "Armstrong Road",
+  "routes": [
+    {"id": "maidstone-01", "path": "../routes/maidstone-01.json"}
+  ]
+}
+```
+
+Each referenced route lives in `src/data/routes/<route-id>.json`.
 
 | Field | Meaning |
 | --- | --- |
-| `id` | Stable route ID, unique across centres |
-| `centreId` | Existing centre record |
-| `number` | Local source route number, not a DVSA identifier |
-| `title`, `summary` | Original short presentation text |
-| `roads` | Factual road highlights; not a complete direction list |
-| `skills` | Suggested practice focuses |
-| `skillsStatus` | Distinguishes suggestions from verified road attributes |
-| `source` | Publisher, article URL, accessed date |
-| `status` | Seeds: `source-linked` or `historical-reference` |
+| `id` | Stable, globally unique route ID |
+| `centreId` | Must match the centre that indexes this route |
+| `number` | Local display number, not a DVSA identifier |
+| `title`, `summary` | Route presentation text |
+| `roads` | Road highlights, not complete directions |
+| `skills`, `skillsStatus` | Suggested learning focuses and their verification status |
+| `status` | `unverified` or `historical-reference` for current plans |
 | `lastVerifiedAt` | Null until independent on-road verification |
 | `geometry` | Null until a verified road-following path is supplied |
-| `navigation.kind` | `source-waypoint-plan` (coordinates) or `source-road-plan` (qualified road names); navigation is null for obsolete starts |
-| `navigation.locations` | Ordered road/location strings for a road-name plan; cannot generate GPX |
-| `navigation.waypoints` | Ordered `{lat, lon, label, sourceMap}` anchors |
-| `navigation.sourceMaps` | Original embedded map URLs for traceability |
-| `navigation.roadPathVerified` | False for all current seeds |
+| `navigation` | A waypoint plan, a road-name plan, or null |
+| `navigation.kind` | `waypoint-plan` or `road-plan` |
+| `navigation.waypoints` | Ordered `{lat, lon, label}` anchors |
+| `navigation.locations` | Ordered qualified location strings for a road-name plan |
+| `navigation.maps` | Functional Google Maps preview URLs |
+| `navigation.roadPathVerified` | False for current plans |
 
-Coordinates are WGS84 latitude/longitude; GeoJSON, if later used, has the opposite array order `[longitude, latitude]`. GPX exports named `rtept` elements in exactly the canonical waypoint order. Adjacent source map boundaries closer than approximately one metre were deduplicated during seed assembly; other anchors remain intact. Source map captions and road table names can disagree; no point has been geocoded from an ambiguous name by this app.
+Optional centre `notice` and `locationStatus` fields explain uncertain meeting points. Chelmsford routes use `startLocationStatus: obsolete-start` and `navigation: null`; no replacement starting point has been guessed.
 
-Browser-local practice uses `version: 1`, arrays of route ID bookmarks, reviewed scenario IDs and session records. A session contains a unique ID, route ID, date, 1–480 minutes, 1–5 self-reported confidence and up to 2,000 characters of notes. Imports are limited to 5 MB and 10,000 sessions; unknown route IDs, bad dates, duplicate IDs or invalid values are rejected. Imports merge by session ID and retain existing notes.
+The registry loader rejects unsupported versions, paths outside the defined centre/route layout, missing files, duplicate IDs, invalid required fields and centre membership mismatches. Paths resolve relative to each containing JSON document. Files load in parallel while retaining index order. All records currently load at startup so the journal can resolve saved route IDs across centres.
 
-Before new datasets are public, replace the seed-oriented checks with a published JSON Schema, status transition rules and independent reviewer evidence. Never infer a `road-verified` state from successful parsing or a routing-engine response.
+Coordinates are WGS84 latitude/longitude. GPX exports every route point in canonical order as `rtept`; road-name plans cannot produce GPX. Preview map URLs are independent of navigation exports. There are no publisher or citation fields in the registry or GPX metadata.
 
-Centres also have `county` for display and map queries. Optional `notice`, `locationStatus` and `locationSources` explain uncertain or relocated meeting points. Centre membership is data-driven; filtering never combines roads from different centres. Crawley has road-name navigation only. Chelmsford retains historical route references with `startLocationStatus: obsolete-source-start` and `navigation: null`; it must not acquire a navigation export until a current route is sourced and checked.
+## Browser-local progress
+
+Storage retains `version: 1` and existing route IDs. Bookmarks, reviewed scenario IDs and sessions survive the registry migration without a local-data rewrite. Sessions contain a unique ID, route ID, date, 1–480 minutes, 1–5 self-reported confidence and up to 2,000 characters of notes. Imports are limited to 5 MB and 10,000 sessions; invalid values or duplicate IDs fail validation. Imports merge by session ID and retain existing records.

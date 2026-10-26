@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 2,
+  "centres": [
+    {
+      "id": "maidstone",
+      "path": "./centres/maidstone.json"
+    },
+    {
+      "id": "crawley",
+      "path": "./centres/crawley.json"
+    },
+    {
+      "id": "chelmsford",
+      "path": "./centres/chelmsford.json"
+    }
+  ]
+}

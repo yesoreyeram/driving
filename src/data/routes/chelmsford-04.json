@@ -1,0 +1,23 @@
+{
+  "id": "chelmsford-04",
+  "number": 4,
+  "centreId": "chelmsford",
+  "title": "Melbourne & north Chelmsford — historical",
+  "summary": "A second historical reference for learning the area, not a current-centre navigation plan.",
+  "roads": [
+    "Broomfield Road",
+    "Corporation Road",
+    "Patching Hall Lane",
+    "School Lane"
+  ],
+  "skills": [
+    "Junctions",
+    "Lane planning"
+  ],
+  "status": "historical-reference",
+  "lastVerifiedAt": null,
+  "geometry": null,
+  "skillsStatus": "suggested-practice-focus",
+  "navigation": null,
+  "startLocationStatus": "obsolete-start"
+}

@@ -1,0 +1,126 @@
+{
+  "id": "maidstone-03",
+  "number": 3,
+  "centreId": "maidstone",
+  "title": "Pembroke & Stockett Lane",
+  "summary": "Explore the roads around south Maidstone and Loose.",
+  "roads": [
+    "Pembroke Road",
+    "Cobtree Road",
+    "Hanover Road",
+    "Stockett Lane"
+  ],
+  "skills": [
+    "Junctions",
+    "Observation"
+  ],
+  "status": "unverified",
+  "lastVerifiedAt": null,
+  "geometry": null,
+  "skillsStatus": "suggested-practice-focus",
+  "navigation": {
+    "kind": "waypoint-plan",
+    "waypoints": [
+      {
+        "lat": 51.260792,
+        "lon": 0.526939,
+        "label": "DVSA Driving Test Centre, 2 Armstrong Rd, Maidstone ME15 6AZ"
+      },
+      {
+        "lat": 51.2625347,
+        "lon": 0.5192982,
+        "label": "Courtenay Road, Maidstone"
+      },
+      {
+        "lat": 51.2642455,
+        "lon": 0.5156214,
+        "label": "Map 1 · point 3"
+      },
+      {
+        "lat": 51.2644165,
+        "lon": 0.5127829,
+        "label": "Church Road, Maidstone"
+      },
+      {
+        "lat": 51.2644341,
+        "lon": 0.5098925,
+        "label": "Lower Tovil, Maidstone"
+      },
+      {
+        "lat": 51.2611077,
+        "lon": 0.5081502,
+        "label": "Burial Ground Lane, Maidstone"
+      },
+      {
+        "lat": 51.2506642,
+        "lon": 0.4997029,
+        "label": "Dean Street, East Farleigh, Maidstone"
+      },
+      {
+        "lat": 51.2355549,
+        "lon": 0.4929337,
+        "label": "Map 1 · point 8"
+      },
+      {
+        "lat": 51.2353463,
+        "lon": 0.4938697,
+        "label": "Cobtree Road, Coxheath, Maidstone"
+      },
+      {
+        "lat": 51.2343903,
+        "lon": 0.4931816,
+        "label": "Hanover Road, Coxheath, Maidstone"
+      },
+      {
+        "lat": 51.2340206,
+        "lon": 0.4950232,
+        "label": "Map 2 · point 2"
+      },
+      {
+        "lat": 51.2300375,
+        "lon": 0.5111287,
+        "label": "Heath Road, Maidstone"
+      },
+      {
+        "lat": 51.2365271,
+        "lon": 0.5166277,
+        "label": "Linton Road, Maidstone"
+      },
+      {
+        "lat": 51.2399052,
+        "lon": 0.516934,
+        "label": "Old Loose Hill, Maidstone"
+      },
+      {
+        "lat": 51.2458964,
+        "lon": 0.5242304,
+        "label": "Map 2 · point 6"
+      },
+      {
+        "lat": 51.2465903,
+        "lon": 0.5208714,
+        "label": "Lancet Lane, Maidstone"
+      },
+      {
+        "lat": 51.2485884,
+        "lon": 0.5222336,
+        "label": "Anglesey Avenue, Maidstone"
+      },
+      {
+        "lat": 51.2506335,
+        "lon": 0.5230646,
+        "label": "Map 2 · point 9"
+      },
+      {
+        "lat": 51.260792,
+        "lon": 0.526939,
+        "label": "DVSA Driving Test Centre, Kings Row, Armstrong Road, Maidstone"
+      }
+    ],
+    "roadPathVerified": false,
+    "maps": [
+      "https://www.google.com/maps/embed?pb=!1m72!1m12!1m3!1d19978.945337247143!2d0.48742872909613477!3d51.24913030636982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m57!3e0!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+2+Armstrong+Rd,+Maidstone+ME15+6AZ!3m2!1d51.260791999999995!2d0.5269389999999999!4m5!1s0x47df322a1acbb4e5:0xa9127633dc7609e2!2sCourtenay+Road,+Maidstone!3m2!1d51.262534699999996!2d0.5192981999999999!4m3!3m2!1d51.264245499999994!2d0.5156214!4m5!1s0x47df33d5190abc29:0xc4f124613e9f8676!2sChurch+Road,+Maidstone!3m2!1d51.264416499999996!2d0.5127828999999999!4m5!1s0x47df33d5b60e7e33:0x714008b3cc753559!2sLower+Tovil,+Maidstone!3m2!1d51.264434099999995!2d0.5098925!4m5!1s0x47df317e0ae2d43f:0x97252b11a8b8f26b!2sBurial+Ground+Lane,+Maidstone!3m2!1d51.2611077!2d0.5081502!4m5!1s0x47df31695af2acc1:0x6603e1b11c581685!2sDean+Street,+East+Farleigh,+Maidstone!3m2!1d51.250664199999996!2d0.49970289999999995!4m3!3m2!1d51.2355549!2d0.4929337!4m5!1s0x47df31168f2e395b:0xca33739251ddf8d4!2sCobtree+Road,+Coxheath,+Maidstone!3m2!1d51.235346299999996!2d0.49386969999999997!4m5!1s0x47df3116f5e359ab:0xf242cd29f1b631ed!2sHanover+Road,+Coxheath,+Maidstone!3m2!1d51.2343903!2d0.4931816!5e0!3m2!1sen!2suk!4v1663778278203!5m2!1sen!2suk",
+      "https://www.google.com/maps/embed?pb=!1m70!1m12!1m3!1d19980.37509705827!2d0.4946782290893679!3d51.24583930825895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m55!3e0!4m5!1s0x47df3116f5e359ab:0xf242cd29f1b631ed!2sHanover+Rd,+Coxheath,+Maidstone!3m2!1d51.2343903!2d0.4931816!4m3!3m2!1d51.2340206!2d0.4950232!4m5!1s0x47df31766aa9d145:0xf7121b3a479556d!2sHeath+Road,+Maidstone!3m2!1d51.230037499999995!2d0.5111287!4m5!1s0x47df31a0d9c84121:0x43f4da91711bf2ec!2sLinton+Road,+Maidstone!3m2!1d51.236527099999996!2d0.5166277!4m5!1s0x47df31a1b8cd3611:0x221ccc66fe994e6a!2sOld+Loose+Hill,+Maidstone!3m2!1d51.239905199999995!2d0.516934!4m3!3m2!1d51.2458964!2d0.5242304!4m5!1s0x47df319be6db24e5:0x12f87c767660deb5!2sLancet+Lane,+Maidstone!3m2!1d51.2465903!2d0.5208714!4m5!1s0x47df319bacad9039:0xbf8e097b5f1225cb!2sAnglesey+Avenue,+Maidstone!3m2!1d51.248588399999996!2d0.5222336!4m3!3m2!1d51.2506335!2d0.5230646!4m5!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!2sDVSA+Driving+Test+Centre,+Kings+Row,+Armstrong+Road,+Maidstone!3m2!1d51.260791999999995!2d0.5269389999999999!5e0!3m2!1sen!2suk!4v1663778522579!5m2!1sen!2suk"
+    ]
+  }
+}

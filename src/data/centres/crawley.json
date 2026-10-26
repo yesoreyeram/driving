@@ -1,0 +1,19 @@
+{
+  "id": "crawley",
+  "name": "Crawley",
+  "county": "West Sussex",
+  "area": "West Sussex, South East England",
+  "meetingArea": "The Pavilions, Brighton Road, Pease Pottage",
+  "notice": "These road plans are historical and have not been checked on the road. Confirm the current centre location and access in your booking. Google Maps resolves road names; check each point before driving.",
+  "locationStatus": "unverified",
+  "routes": [
+    {
+      "id": "crawley-01",
+      "path": "../routes/crawley-01.json"
+    },
+    {
+      "id": "crawley-02",
+      "path": "../routes/crawley-02.json"
+    }
+  ]
+}
